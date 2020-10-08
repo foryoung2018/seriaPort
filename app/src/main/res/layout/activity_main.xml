@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.licheedev.serialtool.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/horizontal_margin"
+        android:paddingRight="@dimen/horizontal_margin">
+
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="关闭" />
+
+        <EditText
+            android:id="@+id/et_data"
+            android:layout_width="310dp"
+            android:layout_height="@dimen/default_button_height"
+            android:digits="0123456789abcdefABCDEF"
+            android:hint="@string/input_data"
+            android:inputType="textCapCharacters"
+            android:singleLine="true"
+            android:textSize="@dimen/edit_text_size" />
+
+        <EditText
+            android:id="@+id/et_devices"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/et_content"
+            android:text="a1a2a3a40b002201101010101111bbbb28"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.licheedev.serialtool.activity.MainActivity">
+
+
+        <ScrollView
+            android:layout_width="120dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/send_save"
+                    style="@style/ButtonStyle"
+                    android:layout_height="48dp"
+                    android:text="存储收钞口纸币" />
+                <Button
+                    android:id="@+id/send_exit"
+                    style="@style/ButtonStyle"
+                    android:layout_height="48dp"
+                    android:text="退出工作模式" />
+                <Button
+                    android:id="@+id/send"
+                    style="@style/ButtonStyle"
+                    android:layout_height="48dp"
+                    android:text="开始存钱" />
+
+                <Button
+                    android:id="@+id/send_work"
+                    style="@style/ButtonStyle"
+                    android:layout_height="48dp"
+                    android:text="进入工作模式" />
+                <Button
+                    android:id="@+id/send_reset"
+                    style="@style/ButtonStyle"
+                    android:layout_height="48dp"
+                    android:text="清分机复位" />
+                <Button
+                    android:id="@+id/send_custom"
+                    style="@style/ButtonStyle"
+                    android:layout_height="48dp"
+                    android:text="查看退钞原因" />
+
+                <Button
+                    android:id="@+id/send_receive"
+                    style="@style/ButtonStyle"
+                    android:layout_height="48dp"
+                    android:text="开始收钞" />
+
+                <Button
+                    android:id="@+id/send_count"
+                    style="@style/ButtonStyle"
+                    android:layout_height="48dp"
+                    android:text="开始点算" />
+                <Button
+                    android:id="@+id/btn_send_data"
+                    style="@style/ButtonStyle"
+                    android:layout_height="48dp"
+                    android:text="@string/send_data1" />
+
+                <Button
+                    android:id="@+id/btn_send_data2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/send_data2" />
+
+                <Button
+                    android:id="@+id/btn_send_data3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/send_data3" />
+
+                <Button
+                    android:id="@+id/btn_send_data4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/send_data4" />
+
+                <Button
+                    android:id="@+id/btn_send_data5"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/send_data5" />
+
+                <Button
+                    android:id="@+id/btn_send_data6"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/send_data6" />
+
+                <Button
+                    android:id="@+id/btn_send_data7"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/send_data7" />
+
+                <Button
+                    android:id="@+id/btn_send_data8"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/send_data8" />
+
+                <Button
+                    android:id="@+id/btn_send_data9"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="@string/send_data9" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <include
+            layout="@layout/include_fragment_container"
+            android:layout_width="202dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+</LinearLayout>
+

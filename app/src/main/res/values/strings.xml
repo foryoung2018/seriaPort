@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Kun5测试程序v1.5</string>
+    <string name="select_serial_port">串口设备:</string>
+    <string name="select_baud_rate">波特率</string>
+    <string name="open_serial_port">打开串口</string>
+    <string name="close_serial_port">关闭串口</string>
+    <string name="no_serial_device">找不到串口设备</string>
+    <string name="send_data1">打印机测试</string>
+    <string name="send_data2">背面串口测试</string>
+    <string name="send_data3">打开罩门</string>
+    <string name="send_data4">关闭罩门</string>
+    <string name="send_data5">打开落钞口</string>
+    <string name="send_data6">关闭落钞口</string>
+    <string name="send_data7">报警器测试</string>
+    <string name="send_data8">读取机器版本</string>
+    <string name="send_data9">电机测试</string>
+    <string name="send_data10">发送命令</string>
+    <string name="send_data11">发送命令</string>
+    <string name="input_data">二维码扫描</string>
+    <string name="load_cmd_list">加载命令列表</string>
+  
+</resources>
