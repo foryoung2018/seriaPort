@@ -1,6 +1,7 @@
 package com.licheedev.serialtool.comn.message;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import org.greenrobot.eventbus.EventBus;
 
@@ -15,6 +16,10 @@ public class LogManager {
 
     public LogManager() {
         messages = new ArrayList<>();
+    }
+
+    public void post(byte[] map) {
+        EventBus.getDefault().post(map);
     }
 
     private static class InstanceHolder {

@@ -2,6 +2,8 @@ package com.licheedev.serialtool;
 
 import android.app.Application;
 import android.os.Handler;
+
+import com.licheedev.serialtool.comn.SerialPortManager;
 import com.licheedev.serialtool.util.PrefHelper;
 
 /**
@@ -16,10 +18,10 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
         sInstance = this;
         mUiHandler = new Handler();
         initUtils();
+        SerialPortManager.instance().initDevice();
     }
 
     private void initUtils() {

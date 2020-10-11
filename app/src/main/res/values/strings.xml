@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kun5测试程序v1.5</string>
+    <string name="app_name">格雷斯存款机</string>
     <string name="select_serial_port">串口设备:</string>
     <string name="select_baud_rate">波特率</string>
     <string name="open_serial_port">打开串口</string>

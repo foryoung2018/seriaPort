@@ -10,9 +10,12 @@ import com.licheedev.serialtool.comn.message.IMessage;
 import com.licheedev.serialtool.comn.message.LogManager;
 import com.licheedev.serialtool.comn.message.RecvMessage;
 import com.licheedev.serialtool.util.ByteUtil;
+import com.licheedev.serialtool.util.constant.Money;
+
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
 
 /**
  * 读串口线程
@@ -201,7 +204,6 @@ public class SerialReadThread extends Thread {
             {hexstr1=hexStr;}
 
             LogPlus.e("read_thread","传感器 " + hexstr1);
-
 //            SerialPortManager.instance().sendCommand(sendok);
         }
         else if((char)(received[6]&0xff)==0x90)
@@ -378,7 +380,8 @@ public class SerialReadThread extends Thread {
                     break;
                 case 3:
                     LogPlus.e("read_thread","点钞完成 ");
-                    amountReceiveMoney(received);
+//                    amountReceiveMoney(received);
+                    LogManager.instance().post(received);
                     break;
                 case 4:
                     LogPlus.e("read_thread","点钞暂停 ");
@@ -456,27 +459,10 @@ public class SerialReadThread extends Thread {
         final String amount = " 共存  100x" + CNY_100 + " 50x" +
                 CNY_50 + " 20x" + CNY_20 + " 10x" + CNY_10 + " 5x" + CNY_5 + " 1x" + CNY_1;
         LogPlus.e("read_thread",amount);
-//        LogManager.instance().post(new IMessage() {
-//            @Override
-//            public String getMessage() {
-//                return amount;
-//            }
-//
-//            @Override
-//            public boolean isToSend() {
-//                return false;
-//            }
-//        });
     }
 
-    int Denomination_100_CNY = 100;
-    int Denomination_50_CNY = 50;
-    int Denomination_20_CNY = 20;
-    int Denomination_10_CNY = 10;
-    int Denomination_5_CNY = 5;
-    int Denomination_1_CNY = 1;
-
     private void amountReceiveMoney(byte[] received) {
+
         int CNY_100 = received[9] + (received[10]<<8);
         int CNY_50 = received[11] + (received[12]<<8);
         int CNY_20 = received[13] + (received[14]<<8);
@@ -486,19 +472,8 @@ public class SerialReadThread extends Thread {
         final String amount = " 收到  100x" + CNY_100 + " 50x" +
                 CNY_50 + " 20x" + CNY_20 + " 10x" + CNY_10 + " 5x" + CNY_5 + " 1x" + CNY_1;
         LogPlus.e("read_thread",amount);
-//        LogManager.instance().post(new IMessage() {
-//            @Override
-//            public String getMessage() {
-//                return amount;
-//            }
-//
-//            @Override
-//            public boolean isToSend() {
-//                return false;
-//            }
-//        });
-    }
 
+    }
 
     /**
      * 停止读线程

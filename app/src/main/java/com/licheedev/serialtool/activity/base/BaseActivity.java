@@ -64,8 +64,9 @@ public abstract class BaseActivity extends AppCompatActivity {
      * 刷新日志列表
      */
     protected void refreshLogList() {
-
-        mLogFragment.updateList();
+        if(mLogFragment != null){
+            mLogFragment.updateList();
+        }
     }
 
     /**
@@ -113,6 +114,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         // 收到时间，刷新界面
 
 //        ToastUtil.show(App.instance(), "recever " +(message == null? "messge = null" : message.getMessage()));
-        mLogFragment.add(message);
+       if(mLogFragment != null){
+           mLogFragment.add(message);
+       }
     }
 }
