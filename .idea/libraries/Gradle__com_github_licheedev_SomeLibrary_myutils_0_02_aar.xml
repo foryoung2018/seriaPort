@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.licheedev.SomeLibrary:myutils:0.02@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/022d9c40c01336894af69b3378e3e54d/myutils-0.02/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/022d9c40c01336894af69b3378e3e54d/myutils-0.02/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/022d9c40c01336894af69b3378e3e54d/myutils-0.02/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.licheedev.SomeLibrary/myutils/0.02/19e51633fd08f2e5b48c9f7d45925109f9fbcb26/myutils-0.02-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.licheedev.SomeLibrary/myutils/0.02/9956572abe15781dbbab92ca0efa61e92b32c9d1/myutils-0.02-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

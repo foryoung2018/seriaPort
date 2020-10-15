@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/black"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:text="@string/login_welcome"
         android:textColor="@color/white"
-        android:text="欢迎使用智能存款机"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="请输入用户名"
+        android:hint="@string/login_input_user"
         android:inputType="textPersonName"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="请输入密码"
+        android:hint="@string/login_input_pwd"
         android:inputType="textPassword"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/editText"
@@ -49,7 +47,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
-        android:text="零钱"
+        android:text="@string/login_money"
         app:layout_constraintEnd_toEndOf="@+id/editText2"
         app:layout_constraintStart_toStartOf="@+id/editText2"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
@@ -60,7 +58,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:text="币种"
+        android:text="@string/login_currency"
         app:layout_constraintBottom_toBottomOf="@+id/button"
         app:layout_constraintEnd_toStartOf="@+id/button"
         app:layout_constraintTop_toTopOf="@+id/button" />
@@ -69,9 +67,9 @@
         android:id="@+id/button3"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginStart="30dp"
-        android:text="菜单"
+        android:layout_marginLeft="30dp"
+        android:text="@string/login_menu"
         app:layout_constraintBottom_toBottomOf="@+id/button"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toTopOf="@+id/button" />
@@ -82,7 +80,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="30dp"
         android:layout_marginRight="30dp"
-        android:text="登录"
+        android:text="@string/login_login"
         app:layout_constraintBottom_toBottomOf="@+id/btCurren"
         app:layout_constraintEnd_toStartOf="@+id/btCurren"
         app:layout_constraintTop_toTopOf="@+id/btCurren" />
@@ -91,9 +89,9 @@
         android:id="@+id/button5"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginLeft="30dp"
         android:layout_marginStart="30dp"
-        android:text="完成"
+        android:layout_marginLeft="30dp"
+        android:text="@string/login_menu"
         app:layout_constraintBottom_toBottomOf="@+id/button3"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toTopOf="@+id/button3" />

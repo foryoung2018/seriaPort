@@ -24,9 +24,6 @@
 
         </activity>
 
-        <activity android:name=".activity.DepositActivity"
-            android:screenOrientation="landscape"/>
-
         <activity android:name=".activity.LoginActivity"
             android:screenOrientation="landscape">
             <intent-filter>
@@ -36,6 +33,17 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".activity.deposit.DepositActivity"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".activity.manage.SetManageActivity"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".activity.HomeActivity"
+            android:screenOrientation="landscape"/>
+
+        <activity android:name=".activity.deposit.DepositSelectActivity"
+            android:screenOrientation="landscape"/>
 
     </application>
 

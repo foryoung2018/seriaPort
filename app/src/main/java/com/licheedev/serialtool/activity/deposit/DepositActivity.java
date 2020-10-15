@@ -1,25 +1,20 @@
-package com.licheedev.serialtool.activity;
+package com.licheedev.serialtool.activity.deposit;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.licheedev.myutils.LogPlus;
 import com.licheedev.serialtool.R;
+import com.licheedev.serialtool.activity.MainActivity;
 import com.licheedev.serialtool.activity.base.BaseActivity;
 import com.licheedev.serialtool.comn.SerialPortManager;
 import com.licheedev.serialtool.util.constant.Money;
 
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
-
-import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnClick;

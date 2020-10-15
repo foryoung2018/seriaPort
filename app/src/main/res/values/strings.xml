@@ -18,5 +18,23 @@
     <string name="send_data11">发送命令</string>
     <string name="input_data">二维码扫描</string>
     <string name="load_cmd_list">加载命令列表</string>
+
+    <string name="login_welcome">欢迎使用智能存款机</string>
+    <string name="login_input_user">请输入用户名</string>
+    <string name="login_input_pwd">请输入密码</string>
+    <string name="login_money">零钱</string>
+    <string name="login_currency">币种</string>
+    <string name="login_menu">菜单</string>
+    <string name="login_login">登录</string>
+    <string name="login_complete">完成</string>
+
+    <string name="setma_select">请选择您需要的服务</string>
+    <string name="home_title">首选项</string>
+
+    <string name="deposit_select">请选择存款方式</string>
+    <string name="deposit_other_select">请选择其他的存款方式</string>
+    <string name="back">返回</string>
+
+
   
 </resources>

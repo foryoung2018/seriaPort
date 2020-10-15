@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.licheedev.Android-SerialPort-API:serialport:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/865db2e984ac09a711d63d9ae5132c66/serialport-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/865db2e984ac09a711d63d9ae5132c66/serialport-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.licheedev.Android-SerialPort-API/serialport/1.0.1/ada34e42c0466178ccc7c1171465bf8834b34d3c/serialport-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.licheedev.Android-SerialPort-API/serialport/1.0.1/a7573879f94d3fd665a33ce701eae0f5077aa1cd/serialport-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
