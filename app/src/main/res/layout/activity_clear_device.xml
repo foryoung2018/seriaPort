@@ -13,18 +13,19 @@
         android:layout_marginTop="50dp"
         android:text="@string/clear_deveic_test"
         android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/llOriginal"
-        android:layout_width="210dp"
+        android:layout_width="266dp"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/rectangle_3_blue"
+        android:background="@drawable/rectangle_solide_blue"
         android:orientation="horizontal"
-        android:paddingLeft="10dp"
+        android:paddingLeft="20dp"
         android:paddingRight="10dp"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -38,7 +39,7 @@
             android:gravity="center_vertical"
             android:text="@string/original_bill_num"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvOriginalNum"
@@ -48,18 +49,18 @@
             android:gravity="center_vertical"
             android:text="00000000"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llNew"
-        android:layout_width="210dp"
+        android:layout_width="266dp"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/rectangle_3_blue"
+        android:background="@drawable/rectangle_solide_blue"
         android:orientation="horizontal"
-        android:paddingLeft="10dp"
+        android:paddingLeft="20dp"
         android:paddingRight="10dp"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -72,7 +73,7 @@
             android:gravity="center_vertical"
             android:text="@string/new_bill_num"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvNewNum"
@@ -82,18 +83,18 @@
             android:gravity="center_vertical"
             android:text="00000000"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llLead"
-        android:layout_width="210dp"
+        android:layout_width="266dp"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
-        android:background="@drawable/rectangle_3_blue"
+        android:background="@drawable/rectangle_solide_blue"
         android:orientation="horizontal"
-        android:paddingLeft="10dp"
+        android:paddingLeft="20dp"
         android:paddingRight="10dp"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -106,7 +107,7 @@
             android:gravity="center_vertical"
             android:text="@string/lead_seal_num"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tvLead"
@@ -116,26 +117,27 @@
             android:gravity="center_vertical"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
 
 
     <ImageButton
         android:id="@+id/ibtn_back"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="30dp"
         android:background="@color/color00baff"
         android:src="@mipmap/ic_title_bar_left_arrow"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="@+id/llOriginal"
         app:layout_constraintLeft_toRightOf="@+id/llOriginal" />
 
     <ImageButton
         android:id="@+id/ibtn_ok"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="30dp"
         android:background="@color/color00baff"
@@ -145,16 +147,14 @@
 
     <ImageButton
         android:id="@+id/ibtn_cancel"
-        android:layout_width="80dp"
-        android:layout_height="35dp"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="30dp"
         android:background="@color/color00baff"
         android:src="@mipmap/ic_cancel"
         app:layout_constraintBottom_toBottomOf="@+id/llLead"
         app:layout_constraintLeft_toRightOf="@+id/llLead" />
-
-
 
 
 </android.support.constraint.ConstraintLayout>

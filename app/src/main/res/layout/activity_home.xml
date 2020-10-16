@@ -1,50 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:text="@string/home_title"
         android:textColor="@color/white"
-        android:textSize="14sp" />
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rectangle_solide_blue"
+        android:scaleType="center"
+        android:src="@mipmap/home_dayin" />
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/ibtn_deposit_select"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:src="@mipmap/ic_launcher" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/rectangle_solide_blue"
+            android:src="@mipmap/home_money" />
 
         <ImageButton
             android:id="@+id/ibtn_clear_device"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginLeft="30dp"
-            android:background="@drawable/rectangle_3_blue"
-            android:src="@mipmap/ic_delete" />
+            android:background="@drawable/rectangle_solide_blue"
+            android:src="@mipmap/home_menu" />
 
         <ImageButton
             android:id="@+id/ibtn_setmanage"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_marginLeft="30dp"
-            android:background="@drawable/rectangle_3_blue"
-            android:src="@mipmap/ic_setting" />
+            android:background="@drawable/rectangle_solide_blue"
+            android:src="@mipmap/home_time" />
 
 
     </LinearLayout>
 
 
-</LinearLayout>
+</RelativeLayout>

@@ -14,7 +14,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/manaage"
         android:textColor="@color/white"
-        android:textSize="14sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -69,25 +69,27 @@
 
     <Button
         android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginLeft="80dp"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginBottom="30dp"
         android:background="#18f"
         android:text="@string/back"
         android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btLogout"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="30dp"
-        android:layout_marginRight="80dp"
+        android:layout_marginRight="30dp"
         android:layout_marginBottom="30dp"
         android:background="#18f"
         android:text="@string/logout"
         android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

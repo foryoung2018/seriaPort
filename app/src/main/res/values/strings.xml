@@ -25,7 +25,7 @@
     <string name="login_money">零钱</string>
     <string name="login_currency">币种</string>
     <string name="login_menu">菜单</string>
-    <string name="login_login">登录</string>
+    <string name="login_login">登  录</string>
     <string name="login_complete">完成</string>
 
     <string name="setma_select">请选择您需要的服务</string>
@@ -36,6 +36,7 @@
     <string name="back">返回</string>
     <string name="test">测试</string>
     <string name="logout">注销</string>
+    <string name="exit">退出</string>
     <string name="clear_deveic_test">清机测试</string>
     <string name="original_bill_num">原钞袋数:</string>
     <string name="new_bill_num">新钞袋数:</string>
@@ -62,6 +63,7 @@
     <string name="maint_error_clear">错误清除</string>
     <string name="maint_bill_init">钞袋初始化</string>
     <string name="print_sys_title">系统打印</string>
+    <string name="print_all">统计打印</string>
     <string name="print_bill_d">当前钞袋</string>
     <string name="print_clear_record">清机记录</string>
     <string name="print_deposit_record">存款记录</string>
