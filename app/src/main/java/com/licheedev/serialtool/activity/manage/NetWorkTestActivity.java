@@ -22,13 +22,13 @@ public class NetWorkTestActivity extends BaseActivity {
         return R.layout.activity_network_test;
     }
 
-    @OnClick({R.id.btnBack, R.id.btnTest, R.id.btLogout})
+    @OnClick({R.id.btnBack, R.id.btnUpload, R.id.btLogout})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btnBack:
                 finish();
                 break;
-            case R.id.btnTest:
+            case R.id.btnUpload:
                 break;
             case R.id.btLogout:
                 break;

@@ -27,7 +27,7 @@ public class ManageActivity extends BaseActivity {
 
                 break;
             case R.id.tvDeviceManage:
-                startActivity(new Intent(ManageActivity.this, DeviceManageActivity.class));
+                startActivity(new Intent(ManageActivity.this, DeviceManagersActivity.class));
                 break;
             case R.id.tvDataUpload:
                 startActivity(new Intent(ManageActivity.this, DataUploadActivity.class));

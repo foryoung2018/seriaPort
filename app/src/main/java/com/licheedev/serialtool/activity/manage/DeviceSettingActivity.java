@@ -33,14 +33,11 @@ public class DeviceSettingActivity extends BaseActivity {
         tvdevice.setText(getResources().getString(R.string.system_time));
     }
 
-    @OnClick({R.id.btnBack, R.id.btnRegister, R.id.btLogout})
+    @OnClick({R.id.btnBack, R.id.btLogout})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btnBack:
                 finish();
-                break;
-            case R.id.btnRegister:
-
                 break;
             case R.id.btLogout:
                 break;

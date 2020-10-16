@@ -27,8 +27,6 @@ public class SystemPrintActivity extends BaseActivity {
             case R.id.tv_bill_data:
                 break;
 
-            case R.id.tv1:
-                break;
 
             case R.id.btnBack:
                 finish();

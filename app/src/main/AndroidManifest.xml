@@ -62,7 +62,7 @@
             android:name=".activity.manage.NetWorkTestActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".activity.manage.DeviceManageActivity"
+            android:name=".activity.manage.DeviceRegisterActivity"
             android:screenOrientation="landscape" />
 
         <activity
@@ -78,7 +78,7 @@
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.manage.DeviceRegisterActivity"
+            android:name=".activity.manage.DeviceManagersActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".activity.manage.MaintainActivity"

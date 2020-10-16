@@ -28,11 +28,11 @@ public class LoginActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
     }
 
-    @OnClick({R.id.btSave,R.id.btCurren,R.id.button6,R.id.button5})
+    @OnClick({R.id.btSave, R.id.btCurren, R.id.button6, R.id.button5})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btSave:
-               // startActivity(new Intent(this, DepositActivity.class));
+                // startActivity(new Intent(this, DepositActivity.class));
                 startActivity(new Intent(this, SelectDepositActivity.class));
                 finish();
                 break;
@@ -42,17 +42,13 @@ public class LoginActivity extends BaseActivity {
 
             case R.id.button6:
                 startActivity(new Intent(this, SetManageActivity.class));
-                finish();
                 break;
             case R.id.button5:
                 startActivity(new Intent(this, ClearDeviceTestActivity.class));
-                finish();
                 break;
 
         }
     }
-
-
 
 
     @Override

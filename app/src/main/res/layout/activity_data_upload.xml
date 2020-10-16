@@ -56,7 +56,6 @@
 
     <include layout="@layout/common_btnmiddle" />
 
-
     <include layout="@layout/common_btnlogout" />
 
 
