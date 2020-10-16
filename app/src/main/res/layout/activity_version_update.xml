@@ -61,30 +61,9 @@
 
     </LinearLayout>
 
+    <include layout="@layout/common_btnback" />
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginBottom="30dp"
-        android:background="#18f"
-        android:text="@string/back"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginBottom="30dp"
-        android:background="#18f"
-        android:text="@string/logout"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <include layout="@layout/common_btnlogout" />
 
 
 </android.support.constraint.ConstraintLayout>

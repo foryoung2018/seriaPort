@@ -74,6 +74,16 @@
     <string name="device_register">设备注册</string>
     <string name="input_register_code">请输入注册码</string>
     <string name="system_time">系统时间</string>
+    <string name="plase_paper_put">请把纸币放入存款口</string>
+    <string name="currency_numer">张数 :</string>
+    <string name="monery_number">金额 :</string>
+    <string name="refuse_money">拒钞 :</string>
+
+    <string name="coin">硬币</string>
+    <string name="check">支票</string>
+    <string name="bill">钞票</string>
+    <string name="other">其他</string>
+    <string name="input_money">请输入存款金额</string>
 
   
 </resources>

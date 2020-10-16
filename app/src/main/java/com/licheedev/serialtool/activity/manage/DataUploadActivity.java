@@ -20,7 +20,7 @@ public class DataUploadActivity extends BaseActivity {
         return R.layout.activity_data_upload;
     }
 
-    @OnClick({R.id.tv_depositdata, R.id.tv_bill_data, R.id.tv1, R.id.btnBack, R.id.btnUpload, R.id.btLogout})
+    @OnClick({R.id.tv_depositdata, R.id.tv_bill_data, R.id.btnBack, R.id.btnUpload, R.id.btLogout})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_depositdata:
@@ -29,8 +29,6 @@ public class DataUploadActivity extends BaseActivity {
             case R.id.tv_bill_data:
                 break;
 
-            case R.id.tv1:
-                break;
 
             case R.id.btnBack:
                 finish();

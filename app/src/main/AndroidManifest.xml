@@ -43,11 +43,11 @@
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.HomeActivity"
+            android:name=".activity.deposit.SelectDepositActivity"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.deposit.DepositSelectActivity"
+            android:name=".activity.deposit.OtherDepositActivity"
             android:screenOrientation="landscape" />
 
         <activity
@@ -90,6 +90,10 @@
 
         <activity
             android:name=".activity.manage.DeviceSettingActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.deposit.PaperCurrencyDepositActivity"
             android:screenOrientation="landscape" />
 
     </application>

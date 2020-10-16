@@ -14,7 +14,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/device_manaage"
         android:textColor="@color/white"
-        android:textSize="14sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:drawableTop="@mipmap/ic_launcher_round"
+        android:drawableTop="@mipmap/network_set"
         android:drawablePadding="10dp"
         android:text="@string/network_test"
         android:textColor="@color/white"
@@ -37,29 +37,9 @@
         tools:ignore="MissingConstraints" />
 
 
-    <Button
-        android:id="@+id/btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginBottom="30dp"
-        android:background="#18f"
-        android:text="@string/back"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+    <include layout="@layout/common_btnback" />
 
-    <Button
-        android:id="@+id/btLogout"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginRight="80dp"
-        android:layout_marginBottom="30dp"
-        android:background="#18f"
-        android:text="@string/logout"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <include layout="@layout/common_btnlogout" />
 
 
 </android.support.constraint.ConstraintLayout>
