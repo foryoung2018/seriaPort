@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/manaage"
+        android:text="@string/setting"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,36 +31,48 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/tvUsermanage"
+            android:id="@+id/tvDevice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@mipmap/ic_launcher_round"
             android:drawablePadding="10dp"
-            android:text="@string/user_manaage"
+            android:text="@string/set_device"
             android:textColor="@color/white"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tvDeviceManage"
+            android:id="@+id/tvNetwork"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:drawableTop="@mipmap/ic_launcher_round"
             android:drawablePadding="10dp"
-            android:text="@string/device_manaage"
+            android:text="@string/set_network"
             android:textColor="@color/white"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tvDataUpload"
+            android:id="@+id/tvFunction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:drawableTop="@mipmap/ic_launcher_round"
             android:drawablePadding="10dp"
-            android:text="@string/data_upload"
+            android:text="@string/set_function"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvenvelope"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:drawablePadding="10dp"
+            android:text="@string/set_envelope"
             android:textColor="@color/white"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />

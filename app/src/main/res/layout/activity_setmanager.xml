@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:text="@string/setma_select"
         android:textColor="@color/white"
         android:textSize="14sp" />
@@ -83,7 +83,8 @@
             android:layout_width="45dp"
             android:layout_height="45dp"
             android:layout_marginLeft="20dp"
-            android:src="@mipmap/ic_launcher" />
+            android:background="@drawable/rectangle_3_blue"
+            android:src="@mipmap/ic_close" />
 
 
     </LinearLayout>

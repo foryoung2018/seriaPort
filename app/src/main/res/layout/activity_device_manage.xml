@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/manaage"
+        android:text="@string/device_manaage"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,52 +20,22 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/tvdevicemanage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:orientation="horizontal"
+        android:drawableTop="@mipmap/ic_launcher_round"
+        android:drawablePadding="10dp"
+        android:text="@string/network_test"
+        android:textColor="@color/white"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/tvUsermanage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTop="@mipmap/ic_launcher_round"
-            android:drawablePadding="10dp"
-            android:text="@string/user_manaage"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/tvDeviceManage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:drawableTop="@mipmap/ic_launcher_round"
-            android:drawablePadding="10dp"
-            android:text="@string/device_manaage"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/tvDataUpload"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:drawableTop="@mipmap/ic_launcher_round"
-            android:drawablePadding="10dp"
-            android:text="@string/data_upload"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            tools:ignore="MissingConstraints" />
-
-    </LinearLayout>
 
     <Button
         android:id="@+id/btnBack"

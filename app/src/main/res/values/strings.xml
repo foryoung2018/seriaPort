@@ -34,7 +34,44 @@
     <string name="deposit_select">请选择存款方式</string>
     <string name="deposit_other_select">请选择其他的存款方式</string>
     <string name="back">返回</string>
-
+    <string name="test">测试</string>
+    <string name="logout">注销</string>
+    <string name="clear_deveic_test">清机测试</string>
+    <string name="original_bill_num">原钞袋数:</string>
+    <string name="new_bill_num">新钞袋数:</string>
+    <string name="lead_seal_num">封 铅 号:</string>
+    <string name="manaage">管理</string>
+    <string name="user_manaage">用户管理</string>
+    <string name="device_manaage">机器管理</string>
+    <string name="data_upload">数据上传</string>
+    <string name="network_test">网络测试</string>
+    <string name="network_test_input">请输入测试地址(IP或域名)</string>
+    <string name="deposit_data">存款数据</string>
+    <string name="bill_data">钞贷数据</string>
+    <string name="upload">上传</string>
+    <string name="setting">设定</string>
+    <string name="set_device">机器设定</string>
+    <string name="set_network">网络设定</string>
+    <string name="set_function">功能设定</string>
+    <string name="set_envelope">信封金额</string>
+    <string name="maintain_title">维护</string>
+    <string name="maint_sysinfo">系统信息</string>
+    <string name="maint_set">机器设置</string>
+    <string name="maint_debug">调试</string>
+    <string name="maint_control">设备控制</string>
+    <string name="maint_error_clear">错误清除</string>
+    <string name="maint_bill_init">钞袋初始化</string>
+    <string name="print_sys_title">系统打印</string>
+    <string name="print_bill_d">当前钞袋</string>
+    <string name="print_clear_record">清机记录</string>
+    <string name="print_deposit_record">存款记录</string>
+    <string name="version_update">版本更新</string>
+    <string name="update_set">更新设置</string>
+    <string name="update_android">安卓更新</string>
+    <string name="register">注册</string>
+    <string name="device_register">设备注册</string>
+    <string name="input_register_code">请输入注册码</string>
+    <string name="system_time">系统时间</string>
 
   
 </resources>

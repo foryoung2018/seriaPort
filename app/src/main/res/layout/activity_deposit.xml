@@ -60,6 +60,7 @@
         android:layout_height="30dp"
         android:background="#18f"
         android:text="明细"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tvAmount"
         app:layout_constraintTop_toTopOf="@+id/tvAmount" />
@@ -70,6 +71,7 @@
         android:layout_height="30dp"
         android:layout_marginTop="30dp"
         android:background="#18f"
+        android:textColor="@color/white"
         android:text="完成"
         app:layout_constraintEnd_toEndOf="@+id/btDetail"
         app:layout_constraintStart_toStartOf="@+id/btDetail"

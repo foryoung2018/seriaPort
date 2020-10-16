@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/manaage"
+        android:text="@string/maintain_title"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +20,9 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+
     <LinearLayout
+        android:id="@+id/ll11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -31,39 +33,93 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/tvUsermanage"
+            android:id="@+id/tvSysinfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@mipmap/ic_launcher_round"
             android:drawablePadding="10dp"
-            android:text="@string/user_manaage"
+            android:gravity="center"
+            android:text="@string/maint_sysinfo"
             android:textColor="@color/white"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tvDeviceManage"
+            android:id="@+id/tvDeviceSet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:drawableTop="@mipmap/ic_launcher_round"
             android:drawablePadding="10dp"
-            android:text="@string/device_manaage"
+            android:gravity="center"
+            android:text="@string/maint_set"
             android:textColor="@color/white"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tvDataUpload"
+            android:id="@+id/tvDebug"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:drawableTop="@mipmap/ic_launcher_round"
             android:drawablePadding="10dp"
-            android:text="@string/data_upload"
+            android:gravity="center"
+            android:text="@string/maint_debug"
             android:textColor="@color/white"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/ll11"
+        app:layout_constraintStart_toStartOf="@+id/ll11"
+        app:layout_constraintTop_toBottomOf="@+id/ll11"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tvControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/maint_control"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvErrorClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/maint_error_clear"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvbillinit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:drawableTop="@mipmap/ic_launcher_round"
+            android:drawablePadding="10dp"
+            android:text="@string/maint_bill_init"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints" />
+
 
     </LinearLayout>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.licheedev.serialtool"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.licheedev.serialtool">
 
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -18,13 +18,14 @@
 
         <activity
             android:name="com.licheedev.serialtool.activity.MainActivity"
-            android:theme="@style/AppThemeNoActionBar"
             android:screenOrientation="landscape"
+            android:theme="@style/AppThemeNoActionBar"
             android:windowSoftInputMode="stateHidden|stateUnchanged">
 
         </activity>
 
-        <activity android:name=".activity.LoginActivity"
+        <activity
+            android:name=".activity.LoginActivity"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,17 +34,63 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.deposit.DepositActivity"
-            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.deposit.DepositActivity"
+            android:screenOrientation="landscape" />
 
-        <activity android:name=".activity.manage.SetManageActivity"
-            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.manage.SetManageActivity"
+            android:screenOrientation="landscape" />
 
-        <activity android:name=".activity.HomeActivity"
-            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="landscape" />
 
-        <activity android:name=".activity.deposit.DepositSelectActivity"
-            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".activity.deposit.DepositSelectActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.deposit.ClearDeviceTestActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.ManageActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.NetWorkTestActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.manage.DeviceManageActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.DataUploadActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.SettingActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.SystemPrintActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.DeviceRegisterActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".activity.manage.MaintainActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.VersionUpdateActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.DeviceSettingActivity"
+            android:screenOrientation="landscape" />
 
     </application>
 

@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 import com.licheedev.serialtool.R;
+import com.licheedev.serialtool.activity.deposit.ClearDeviceTestActivity;
 import com.licheedev.serialtool.activity.deposit.DepositActivity;
 import com.licheedev.serialtool.activity.base.BaseActivity;
 import com.licheedev.serialtool.activity.deposit.DepositSelectActivity;
@@ -15,16 +16,9 @@ import butterknife.OnClick;
 
 /**
  * 首选项
- *
  */
 public class HomeActivity extends BaseActivity {
 
-    @BindView(R.id.ibtn_deposit_select)
-    ImageButton ibtnDepositselect;
-    @BindView(R.id.ibtn_clear_device)
-    ImageButton ibtnClearDevice;
-    @BindView(R.id.ibtn_setmanage)
-    ImageButton ibtnSetmannage;
 
     @Override
     protected int getLayoutId() {
@@ -38,7 +32,7 @@ public class HomeActivity extends BaseActivity {
                 startActivity(new Intent(this, DepositSelectActivity.class));
                 break;
             case R.id.ibtn_clear_device:
-
+                startActivity(new Intent(this, ClearDeviceTestActivity.class));
                 break;
             case R.id.ibtn_setmanage:
                 startActivity(new Intent(this, SetManageActivity.class));

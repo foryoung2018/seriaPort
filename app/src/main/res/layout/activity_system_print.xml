@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/manaage"
+        android:text="@string/print_sys_title"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,7 +20,9 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
+
     <LinearLayout
+        android:id="@+id/ll11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -31,41 +33,46 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/tvUsermanage"
+            android:id="@+id/tvcreenbill"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@mipmap/ic_launcher_round"
             android:drawablePadding="10dp"
-            android:text="@string/user_manaage"
+            android:gravity="center"
+            android:text="@string/print_bill_d"
             android:textColor="@color/white"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tvDeviceManage"
+            android:id="@+id/tvclearrecord"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:drawableTop="@mipmap/ic_launcher_round"
             android:drawablePadding="10dp"
-            android:text="@string/device_manaage"
+            android:gravity="center"
+            android:text="@string/print_clear_record"
             android:textColor="@color/white"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tvDataUpload"
+            android:id="@+id/tvdepositrecored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:drawableTop="@mipmap/ic_launcher_round"
             android:drawablePadding="10dp"
-            android:text="@string/data_upload"
+            android:gravity="center"
+            android:text="@string/print_clear_record"
             android:textColor="@color/white"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />
+
 
     </LinearLayout>
+
 
     <Button
         android:id="@+id/btnBack"
