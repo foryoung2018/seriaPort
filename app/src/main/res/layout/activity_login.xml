@@ -83,7 +83,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btSave"
+        android:id="@+id/btLogin"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -95,58 +95,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linpwd" />
 
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/login_money"
-        />
-
-    <Button
-        android:id="@+id/btCurren"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginRight="30dp"
-        android:text="@string/login_currency"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:text="@string/login_menu"
-        app:layout_constraintBottom_toBottomOf="@+id/button"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="@+id/button" />
-
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:text="清机"
-        app:layout_constraintBottom_toBottomOf="@+id/button3"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button3" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginLeft="30dp"
-        android:text="选择服务"
-        app:layout_constraintBottom_toBottomOf="@+id/button5"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
 
 </android.support.constraint.ConstraintLayout>

@@ -10,6 +10,9 @@ import org.greenrobot.eventbus.EventBus;
  */
 
 public class LogManager {
+    public static final int COUNT_COMMAND = 0x1;
+    public static final int EXIT_WORK_COMMAND = 0x2;
+    public static final int SAVE_SUCCESS_COMMAND = 0x3;
 
     public final List<IMessage> messages;
     private boolean mAutoEnd = true;
@@ -18,7 +21,7 @@ public class LogManager {
         messages = new ArrayList<>();
     }
 
-    public void post(byte[] map) {
+    public void post(ReceiveData map) {
         EventBus.getDefault().post(map);
     }
 
@@ -53,6 +56,16 @@ public class LogManager {
 
     public void changAutoEnd() {
         mAutoEnd = !mAutoEnd;
+    }
+
+    public static class ReceiveData{
+       public byte[] data;
+       public int what;
+
+        public ReceiveData(byte[] data, int what) {
+            this.data = data;
+            this.what = what;
+        }
     }
 }
 

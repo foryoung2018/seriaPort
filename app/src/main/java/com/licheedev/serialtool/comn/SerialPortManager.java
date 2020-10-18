@@ -49,13 +49,23 @@ public class SerialPortManager {
             0x04,0x00,/*size 2byte*/
             0x26,/*CMD 1byte*/
             0xBB,0xBB,0x38};
+    int[] commandSaveAck=new  int[]{0xA1,0xA2,0xA3,0xA4,/*STX 4byte*/
+            0x04,0x00,/*size 2byte*/
+            0x25,/*CMD 1byte*/
+            0xBB,0xBB,0x25};
 
-    //退出工作模式再进入，可以二次存钱
-    final String exitCommand = "A1 A2 A3 A4 2F 00 25 06 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 01 00 03 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 BB BB 09";
+    int[] commandMaskOpen=new  int[]{0xA1,0xA2,0xA3,0xA4,0x05,0x00,0x31,0x5A,0xBB,0xBB,0x6A}; //开防罩门6A
+    int[] commandMaskClose=new  int[]{0xA1,0xA2,0xA3,0xA4,0x05,0x00,0x32,0x5A,0xBB,0xBB,0x69}; //关防罩门69
+
+    final String commandStatus = "A1 A2 A3 A4 04 00 11 BB BB 11";
+
+
+    //退出工作模式再进入，可以二次存钱 CMD25
+    final String  exitCommand0= "A1 A2 A3 A4 2F 00 25 06 01 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 01 00 03 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 BB BB 09";
 
     final String exitCommand1 = "A1 A2 A3 A4 05 00 4F 01 BB BB 4F ";
     final String exitCommand2 = "A1 A2 A3 A4 13 00 11 01 00 00 04 3D 00 05 40 00 00 00 00 00 00 01 BB BB 7A";
-    final String exitCommand3 = "A1 A2 A3 A4 05 00 20 06 BB BB 27 ";
+    final String exitCommand = "A1 A2 A3 A4 05 00 20 06 BB BB 27 ";
     final String exitCommand4 = "A1 A2 A3 A4 04 00 16 BB BB 16 ";
     final String exitCommand5 = "A1 A2 A3 A4 05 00 4F 01 BB BB 4F ";
     final String exitCommand6 = "A1 A2 A3 A4 05 00 4F 00 BB BB 4E ";
@@ -72,11 +82,32 @@ public class SerialPortManager {
         SerialPortManager.instance().sendCommand(byteArrayToHexString(commandSave));
     }
 
+    public void sendSaveAck() {
+        SerialPortManager.instance().sendCommand(byteArrayToHexString(commandSaveAck));
+
+    }
+
+
     public void sendExitWorkModeCommand() {
         String replace = exitCommand.replace(" ", "");
         sendCommand(replace);
 //        SerialPortManager.instance().sendCommand(byteArrayToHexString(commandExit));
+    }
 
+
+    public void sendStatusCommand() {
+        String replace = commandStatus.replace(" ", "");
+        sendCommand(replace);
+    }
+
+
+    public void closeMaskDoor() {
+        SerialPortManager.instance().sendCommand(byteArrayToHexString(commandMaskClose));
+    }
+
+
+    public void openMaskDoor() {
+        SerialPortManager.instance().sendCommand(byteArrayToHexString(commandMaskOpen));
     }
 
     private Device mDevice;
@@ -113,8 +144,8 @@ public class SerialPortManager {
         SerialPortManager.instance().open(mDevice);
     }
 
-    private static class InstanceHolder {
 
+    private static class InstanceHolder {
         public static SerialPortManager sManager = new SerialPortManager();
     }
 

@@ -17,6 +17,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
 
+import static com.licheedev.serialtool.comn.message.LogManager.SAVE_SUCCESS_COMMAND;
+
 /**
  * 读串口线程
  */
@@ -380,14 +382,20 @@ public class SerialReadThread extends Thread {
                     break;
                 case 3:
                     LogPlus.e("read_thread","点钞完成 ");
-//                    amountReceiveMoney(received);
-                    LogManager.instance().post(received);
+                    LogManager.ReceiveData data = new LogManager.ReceiveData(received,LogManager.COUNT_COMMAND);
+                    LogManager.instance().post(data);
                     break;
                 case 4:
                     LogPlus.e("read_thread","点钞暂停 ");
                     break;
             }
             return;
+        }
+        else if((char)(received[6]&0xff)== 0x20)
+        {
+            LogManager.ReceiveData data = new LogManager.ReceiveData(received,LogManager.EXIT_WORK_COMMAND);
+            LogManager.instance().post(data);
+            LogPlus.e("read_thread","退出工作模式");
         }
         else if((char)(received[6]&0xff)== 0x21)
         {
@@ -438,6 +446,7 @@ public class SerialReadThread extends Thread {
                     LogPlus.e("read_thread","纸币存储失败，存款操作超时 ");
                     break;
             }
+            LogManager.instance().post(new LogManager.ReceiveData(received, SAVE_SUCCESS_COMMAND));
             return;
         }
         else if((char)(received[6]&0xff)== 0x33)

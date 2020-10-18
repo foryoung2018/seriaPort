@@ -21,9 +21,10 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
+        android:id="@+id/ibtn_record"
         android:background="@drawable/rectangle_solide_blue"
         android:scaleType="center"
-        android:src="@mipmap/home_dayin" />
+        android:src="@mipmap/home_time" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -48,13 +49,13 @@
             android:background="@drawable/rectangle_solide_blue"
             android:src="@mipmap/home_menu" />
 
-        <ImageButton
-            android:id="@+id/ibtn_record"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="30dp"
-            android:background="@drawable/rectangle_solide_blue"
-            android:src="@mipmap/home_time" />
+<!--        <ImageButton-->
+<!--            android:id="@+id/ibtn_record"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_marginLeft="30dp"-->
+<!--            android:background="@drawable/rectangle_solide_blue"-->
+<!--            android:src="@mipmap/home_time" />-->
 
 
     </LinearLayout>

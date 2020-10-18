@@ -18,35 +18,19 @@ import butterknife.OnClick;
 public class LoginActivity extends BaseActivity {
 
 
-    @BindView(R.id.btSave)
-    Button btSave;
-    @BindView(R.id.btCurren)
-    Button btCurren;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
-    @OnClick({R.id.btSave, R.id.btCurren, R.id.button6, R.id.button5})
+    @OnClick({R.id.btLogin,})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.btSave:
+            case R.id.btLogin:
                 // startActivity(new Intent(this, DepositActivity.class));
                 startActivity(new Intent(this, SelectDepositActivity.class));
                 finish();
                 break;
-            case R.id.btCurren:
-                CurrenySelectUtil.showCurreny(LoginActivity.this);
-                break;
-
-            case R.id.button6:
-                startActivity(new Intent(this, SetManageActivity.class));
-                break;
-            case R.id.button5:
-                startActivity(new Intent(this, ClearDeviceTestActivity.class));
-                break;
-
         }
     }
 
