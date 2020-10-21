@@ -96,6 +96,10 @@
             android:name=".activity.deposit.PaperCurrencyDepositActivity"
             android:screenOrientation="landscape" />
 
+        <activity
+            android:name=".activity.deposit.DepositRecordActivity"
+            android:screenOrientation="landscape" />
+
     </application>
 
 </manifest>

@@ -78,12 +78,21 @@
     <string name="currency_numer">张数 :</string>
     <string name="monery_number">金额 :</string>
     <string name="refuse_money">拒钞 :</string>
-
     <string name="coin">硬币</string>
     <string name="check">支票</string>
     <string name="bill">钞票</string>
     <string name="other">其他</string>
     <string name="input_money">请输入存款金额</string>
 
-  
+    <string name="record_deposittime">存款时间</string>
+    <string name="record_depositpeople">存款人</string>
+    <string name="record_money">金额</string>
+    <string name="record_account">银行账户</string>
+    <string name="record_code">存款编码</string>
+    <string name="record_remark">备注</string>
+    <string name="record_allprint">汇总打印</string>
+    <string name="record_updaloddata">上传数据</string>
+
+
+
 </resources>
