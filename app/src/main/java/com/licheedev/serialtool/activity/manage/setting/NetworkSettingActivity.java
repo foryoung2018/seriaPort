@@ -26,9 +26,11 @@ public class NetworkSettingActivity extends BaseActivity {
             case R.id.tvCash: //收款机设定
                 startActivity(new Intent(this, CashRegisterSettingActivity.class));
                 break;
-            case R.id.tvpwd:
+            case R.id.tvpwd: //动态密码锁设置
+                startActivity(new Intent(this, DynamicPwdSetActivity.class));
                 break;
-            case R.id.tvSerial:
+            case R.id.tvSerial: //串口设定
+                startActivity(new Intent(this, SerialportSetActivity.class));
                 break;
             case R.id.btnBack:
                 finish();
