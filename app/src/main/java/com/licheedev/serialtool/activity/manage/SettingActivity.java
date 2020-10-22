@@ -12,6 +12,7 @@ import butterknife.OnClick;
 
 /**
  * 设定
+ * 收款机
  */
 public class SettingActivity extends BaseActivity {
 
@@ -28,6 +29,7 @@ public class SettingActivity extends BaseActivity {
                 startActivity(new Intent(SettingActivity.this, DeviceSettingActivity.class));
                 break;
             case R.id.tvNetwork:
+                startActivity(new Intent(SettingActivity.this, NetworkSettingActivity.class));
                 break;
             case R.id.tvFunction:
                 break;

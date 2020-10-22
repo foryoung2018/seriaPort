@@ -8,6 +8,7 @@ import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.base.BaseActivity;
 import com.licheedev.serialtool.activity.deposit.DepositRecordActivity;
 import com.licheedev.serialtool.activity.deposit.SelectDepositActivitys;
+import com.licheedev.serialtool.activity.manage.SetManageActivity;
 
 import butterknife.OnClick;
 
@@ -23,8 +24,8 @@ public class LoginActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btLogin:
-                // startActivity(new Intent(this, DepositActivity.class));
-                startActivity(new Intent(this, SelectDepositActivitys.class));
+                 startActivity(new Intent(this, SetManageActivity.class));
+               // startActivity(new Intent(this, SelectDepositActivitys.class));
                 finish();
                 break;
         }

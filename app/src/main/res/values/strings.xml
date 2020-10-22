@@ -74,6 +74,7 @@
     <string name="device_register">设备注册</string>
     <string name="input_register_code">请输入注册码</string>
     <string name="system_time">系统时间</string>
+    <string name="language_select">语言选择</string>
     <string name="plase_paper_put">请把纸币放入存款口</string>
     <string name="currency_numer">张数 :</string>
     <string name="monery_number">金额 :</string>
@@ -105,6 +106,16 @@
     <string name="continue_deposit">继续存钱</string>
     <string name="is_continiu_deposit">您有一笔钞票未存入，\n是否继续存入？</string>
     <string name="is_over_deposit">是否结束存款？</string>
+    <string name="user_number">序号</string>
+    <string name="user_account">账号</string>
+    <string name="user_roles">角色</string>
+    <string name="clear_sync">清除同步</string>
+    <string name="sync_account">同步账号</string>
+    <string name="cashregister">收款机</string>
+    <string name="dynamic_pwd">动态密码锁</string>
+    <string name="serial_set">串口设置</string>
+    <string name="cashregister_setting">收款机设置</string>
+    <string name="server_setting">服务器设定</string>
 
 
 </resources>

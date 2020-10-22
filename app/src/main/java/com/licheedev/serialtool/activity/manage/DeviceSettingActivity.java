@@ -15,22 +15,16 @@ import butterknife.OnClick;
  */
 public class DeviceSettingActivity extends BaseActivity {
 
-    @BindView(R.id.textView)
-    TextView tvtitle;
-    @BindView(R.id.tvdevicemanage)
-    TextView tvdevice;
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_device_manage;
+        return R.layout.activity_device_setting;
 
     }
 
     @Override
     protected void initView() {
         super.initView();
-        tvtitle.setText(getResources().getString(R.string.set_device));
-        tvdevice.setText(getResources().getString(R.string.system_time));
     }
 
     @OnClick({R.id.btnBack, R.id.btLogout})

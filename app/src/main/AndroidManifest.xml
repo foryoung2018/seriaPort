@@ -78,7 +78,7 @@
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.manage.DeviceManagersActivity"
+            android:name=".activity.manage.DeviceManageActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".activity.manage.MaintainActivity"
@@ -107,6 +107,19 @@
         <activity
             android:name=".activity.deposit.DepositDetailsActivity"
             android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.UserManageActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.NetworkSettingActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.CashRegisterSettingActivity"
+            android:screenOrientation="landscape" />
+
 
     </application>
 

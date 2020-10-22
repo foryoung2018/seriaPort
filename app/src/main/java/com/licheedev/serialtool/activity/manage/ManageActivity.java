@@ -24,10 +24,10 @@ public class ManageActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tvUsermanage:
-
+                startActivity(new Intent(ManageActivity.this, UserManageActivity.class));
                 break;
             case R.id.tvDeviceManage:
-                startActivity(new Intent(ManageActivity.this, DeviceManagersActivity.class));
+                startActivity(new Intent(ManageActivity.this, DeviceManageActivity.class));
                 break;
             case R.id.tvDataUpload:
                 startActivity(new Intent(ManageActivity.this, DataUploadActivity.class));
