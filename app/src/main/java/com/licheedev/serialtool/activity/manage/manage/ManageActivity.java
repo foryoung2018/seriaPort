@@ -1,4 +1,4 @@
-package com.licheedev.serialtool.activity.manage;
+package com.licheedev.serialtool.activity.manage.manage;
 
 import android.content.Intent;
 import android.view.View;

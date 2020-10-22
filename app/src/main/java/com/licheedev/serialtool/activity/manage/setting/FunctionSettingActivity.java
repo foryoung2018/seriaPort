@@ -11,9 +11,9 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * 服务器设定
+ * 功能设定
  */
-public class ServiceSettingActivity extends BaseActivity {
+public class FunctionSettingActivity extends BaseActivity {
 
     @BindView(R.id.editIp)
     EditText editIp;
@@ -22,7 +22,7 @@ public class ServiceSettingActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_service_setting;
+        return R.layout.activity_function_setting;
     }
 
     @Override

@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/serial_setting"
+        android:text="@string/envelope_max_set"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,11 +29,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="130dp"
             android:layout_height="match_parent"
             android:background="@drawable/rectangle_solide_blue"
             android:gravity="center"
-            android:text="@string/print_serial"
+            android:text="@string/curentmax"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -59,40 +59,11 @@
         app:layout_constraintTop_toBottomOf="@+id/llin1">
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="130dp"
             android:layout_height="match_parent"
             android:background="@drawable/rectangle_solide_blue"
             android:gravity="center"
-            android:text="@string/clear_serial"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
-
-        <EditText
-            android:layout_width="182dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="2dp"
-            android:background="@drawable/rectangle_solide_baff"
-            android:paddingLeft="10dp"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llin3"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/llin2"
-        app:layout_constraintStart_toStartOf="@+id/llin2"
-        app:layout_constraintTop_toBottomOf="@+id/llin2">
-
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/rectangle_solide_blue"
-            android:gravity="center"
-            android:text="@string/saoyisao_serial"
+            android:text="@string/inputmaxmoney"
             android:textColor="@color/white"
             android:textSize="14sp" />
 

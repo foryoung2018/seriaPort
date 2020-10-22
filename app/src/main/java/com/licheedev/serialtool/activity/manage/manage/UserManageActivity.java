@@ -1,4 +1,4 @@
-package com.licheedev.serialtool.activity.manage;
+package com.licheedev.serialtool.activity.manage.manage;
 
 import android.app.Dialog;
 import android.support.v7.widget.LinearLayoutManager;

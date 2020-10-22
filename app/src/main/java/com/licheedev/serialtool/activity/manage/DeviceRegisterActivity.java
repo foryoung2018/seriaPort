@@ -1,6 +1,5 @@
 package com.licheedev.serialtool.activity.manage;
 
-import android.content.Intent;
 import android.view.View;
 import android.widget.EditText;
 

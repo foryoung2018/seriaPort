@@ -1,4 +1,4 @@
-package com.licheedev.serialtool.activity.manage;
+package com.licheedev.serialtool.activity.manage.setting;
 
 import android.view.View;
 import android.widget.Button;

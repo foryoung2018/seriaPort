@@ -55,7 +55,7 @@
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.manage.ManageActivity"
+            android:name=".activity.manage.manage.ManageActivity"
             android:screenOrientation="landscape" />
 
         <activity
@@ -66,30 +66,30 @@
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.manage.DataUploadActivity"
+            android:name=".activity.manage.manage.DataUploadActivity"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.manage.SettingActivity"
+            android:name=".activity.manage.setting.SettingActivity"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.manage.SystemPrintActivity"
+            android:name=".activity.manage.print.SystemPrintActivity"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.manage.DeviceManageActivity"
+            android:name=".activity.manage.manage.DeviceManageActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".activity.manage.MaintainActivity"
-            android:screenOrientation="landscape" />
-
-        <activity
-            android:name=".activity.manage.VersionUpdateActivity"
+            android:name=".activity.manage.maintain.MaintainActivity"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.manage.DeviceSettingActivity"
+            android:name=".activity.manage.update.VersionUpdateActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.setting.DeviceSettingActivity"
             android:screenOrientation="landscape" />
 
         <activity
@@ -109,17 +109,48 @@
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.manage.UserManageActivity"
+            android:name=".activity.manage.manage.UserManageActivity"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.manage.NetworkSettingActivity"
+            android:name=".activity.manage.setting.NetworkSettingActivity"
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.manage.CashRegisterSettingActivity"
+            android:name=".activity.manage.setting.CashRegisterSettingActivity"
             android:screenOrientation="landscape" />
 
+        <activity
+            android:name=".activity.manage.setting.DynamicPwdSetActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.setting.SerialportSetActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.setting.ServiceSettingActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.setting.FunctionSettingActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.setting.EnvelopeSettingActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.maintain.SystemInfoActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.maintain.DeviceSetActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.maintain.DebugActivity"
+            android:screenOrientation="landscape" />
 
     </application>
 

@@ -11,7 +11,6 @@ import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.base.BaseActivity;
 import com.licheedev.serialtool.activity.dapter.BaseRecyclerAdapter;
 import com.licheedev.serialtool.activity.dapter.RecyclerViewHolder;
-import com.licheedev.serialtool.comn.SerialPortManager;
 import com.licheedev.serialtool.dialog.CurrenySelectUtil;
 
 import java.util.ArrayList;

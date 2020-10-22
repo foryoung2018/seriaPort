@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/serial_setting"
+        android:text="@string/functiongsetting"
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,11 +29,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="110dp"
             android:layout_height="match_parent"
             android:background="@drawable/rectangle_solide_blue"
             android:gravity="center"
-            android:text="@string/print_serial"
+            android:text="@string/savecapa"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -53,17 +53,17 @@
         android:id="@+id/llin2"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="@+id/llin1"
         app:layout_constraintStart_toStartOf="@+id/llin1"
         app:layout_constraintTop_toBottomOf="@+id/llin1">
 
         <TextView
-            android:layout_width="100dp"
+            android:layout_width="110dp"
             android:layout_height="match_parent"
             android:background="@drawable/rectangle_solide_blue"
             android:gravity="center"
-            android:text="@string/clear_serial"
+            android:text="@string/exitmoneycapa"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -78,34 +78,77 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/llin3"
-        android:layout_width="wrap_content"
+    <RadioButton
+        android:id="@+id/rd_updatepwd"
+        android:layout_width="136dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/llin2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_solide_blue"
+        android:button="@null"
+        android:checked="true"
+        android:drawableRight="@drawable/radio_button"
+        android:paddingRight="20dp"
+        android:paddingLeft="15dp"
+        android:text="@string/updatepwd"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/llin2"
         app:layout_constraintStart_toStartOf="@+id/llin2"
-        app:layout_constraintTop_toBottomOf="@+id/llin2">
+        app:layout_constraintTop_toBottomOf="@+id/llin2" />
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/rectangle_solide_blue"
-            android:gravity="center"
-            android:text="@string/saoyisao_serial"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
+    <RadioButton
+        android:id="@+id/autoLogout"
+        android:layout_width="136dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_solide_blue"
+        android:button="@null"
+        android:drawableRight="@drawable/radio_button"
+        android:paddingRight="20dp"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/autologout"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rd_updatepwd"
+        app:layout_constraintLeft_toRightOf="@+id/rd_updatepwd" />
 
-        <EditText
-            android:layout_width="182dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="2dp"
-            android:background="@drawable/rectangle_solide_baff"
-            android:paddingLeft="10dp"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
 
-    </LinearLayout>
+    <RadioButton
+        android:id="@+id/rd_turnoff"
+        android:layout_width="144dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_solide_blue"
+        android:button="@null"
+        android:checked="true"
+        android:drawableRight="@drawable/radio_button"
+        android:paddingRight="20dp"
+        android:paddingLeft="15dp"
+        android:text="@string/turnoff"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/rd_updatepwd"
+        app:layout_constraintStart_toStartOf="@+id/rd_updatepwd"
+        app:layout_constraintTop_toBottomOf="@+id/rd_updatepwd" />
+
+    <RadioButton
+        android:id="@+id/rd_isdispalybtn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectangle_solide_blue"
+        android:button="@null"
+        android:checked="true"
+        android:drawableRight="@drawable/radio_button"
+        android:paddingRight="20dp"
+        android:paddingLeft="15dp"
+        android:text="@string/isdisplaybtn"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/rd_turnoff"
+        app:layout_constraintStart_toStartOf="@+id/rd_turnoff"
+        app:layout_constraintTop_toBottomOf="@+id/rd_turnoff" />
 
 
     <include layout="@layout/common_btnback" />

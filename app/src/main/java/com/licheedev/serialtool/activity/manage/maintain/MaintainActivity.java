@@ -1,5 +1,6 @@
-package com.licheedev.serialtool.activity.manage;
+package com.licheedev.serialtool.activity.manage.maintain;
 
+import android.content.Intent;
 import android.view.View;
 
 import com.licheedev.serialtool.R;
@@ -23,10 +24,13 @@ public class MaintainActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tvSysinfo:
+                startActivity(new Intent(this, SystemInfoActivity.class));
                 break;
             case R.id.tvDeviceSet:
+                startActivity(new Intent(this, DeviceSetActivity.class));
                 break;
             case R.id.tvDebug:
+                startActivity(new Intent(this, DebugActivity.class));
                 break;
             case R.id.tvControl:
                 break;

@@ -1,4 +1,4 @@
-package com.licheedev.serialtool.activity.manage;
+package com.licheedev.serialtool.activity.manage.print;
 
 import android.view.View;
 

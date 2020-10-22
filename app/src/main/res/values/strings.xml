@@ -51,6 +51,7 @@
     <string name="bill_data">钞贷数据</string>
     <string name="upload">上传</string>
     <string name="setting">设定</string>
+    <string name="set">设置</string>
     <string name="set_device">机器设定</string>
     <string name="set_network">网络设定</string>
     <string name="set_function">功能设定</string>
@@ -114,8 +115,28 @@
     <string name="cashregister">收款机</string>
     <string name="dynamic_pwd">动态密码锁</string>
     <string name="serial_set">串口设置</string>
+    <string name="serial_setting">串口设定</string>
     <string name="cashregister_setting">收款机设置</string>
     <string name="server_setting">服务器设定</string>
-
+    <string name="server_set">服务器设置</string>
+    <string name="dynamic_pwd_setting">动态密码锁设置</string>
+    <string name="print_serial">打印机串口</string>
+    <string name="clear_serial">清分机串口</string>
+    <string name="saoyisao_serial">扫码机串口</string>
+    <string name="input_service_url">请输入服务器地址</string>
+    <string name="functiongsetting">功能设定</string>
+    <string name="savecapa">暂存口容量</string>
+    <string name="exitmoneycapa">退钞口容量</string>
+    <string name="updatepwd">修改密码</string>
+    <string name="autologout">自动注销</string>
+    <string name="turnoff">蜂鸣器开关</string>
+    <string name="isdisplaybtn">是否显示注销按钮</string>
+    <string name="envelope_max_set">信封最大金额设定</string>
+    <string name="curentmax">目前最大金额</string>
+    <string name="inputmaxmoney">输入最大金额</string>
+    <string name="systeminfo">系统信息</string>
+    <string name="bankset">钞袋设置</string>
+    <string name="systemclear">系统清理</string>
+    <string name="systemdubug">系统调试</string>
 
 </resources>

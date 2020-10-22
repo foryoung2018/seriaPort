@@ -1,4 +1,4 @@
-package com.licheedev.serialtool.activity.manage;
+package com.licheedev.serialtool.activity.manage.setting;
 
 import android.view.View;
 import android.widget.Button;
@@ -11,9 +11,9 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * 动态密码锁设置
+ * 服务器设定
  */
-public class DynamicPwdSetActivity extends BaseActivity {
+public class ServiceSettingActivity extends BaseActivity {
 
     @BindView(R.id.editIp)
     EditText editIp;
@@ -22,7 +22,7 @@ public class DynamicPwdSetActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_dynamic_pwd;
+        return R.layout.activity_service_setting;
     }
 
     @Override

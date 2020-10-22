@@ -5,6 +5,11 @@ import android.view.View;
 
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.base.BaseActivity;
+import com.licheedev.serialtool.activity.manage.maintain.MaintainActivity;
+import com.licheedev.serialtool.activity.manage.manage.ManageActivity;
+import com.licheedev.serialtool.activity.manage.print.SystemPrintActivity;
+import com.licheedev.serialtool.activity.manage.setting.SettingActivity;
+import com.licheedev.serialtool.activity.manage.update.VersionUpdateActivity;
 
 import butterknife.OnClick;
 

@@ -11,9 +11,9 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * 串口设定
+ * 信封最大金额设定
  */
-public class SerialportSetActivity extends BaseActivity {
+public class EnvelopeSettingActivity extends BaseActivity {
 
     @BindView(R.id.editIp)
     EditText editIp;
@@ -22,7 +22,7 @@ public class SerialportSetActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_serialport_setting;
+        return R.layout.activity_envelope_setting;
     }
 
     @Override

@@ -1,10 +1,11 @@
-package com.licheedev.serialtool.activity.manage;
+package com.licheedev.serialtool.activity.manage.manage;
 
 import android.content.Intent;
 import android.view.View;
 
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.base.BaseActivity;
+import com.licheedev.serialtool.activity.manage.NetWorkTestActivity;
 
 import butterknife.OnClick;
 

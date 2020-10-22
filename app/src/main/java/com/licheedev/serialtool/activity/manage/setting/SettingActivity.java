@@ -1,13 +1,11 @@
-package com.licheedev.serialtool.activity.manage;
+package com.licheedev.serialtool.activity.manage.setting;
 
 import android.content.Intent;
 import android.view.View;
-import android.widget.EditText;
 
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.base.BaseActivity;
 
-import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
@@ -32,8 +30,10 @@ public class SettingActivity extends BaseActivity {
                 startActivity(new Intent(SettingActivity.this, NetworkSettingActivity.class));
                 break;
             case R.id.tvFunction:
+                startActivity(new Intent(SettingActivity.this, FunctionSettingActivity.class));
                 break;
             case R.id.tvenvelope:
+                startActivity(new Intent(SettingActivity.this, EnvelopeSettingActivity.class));
                 break;
             case R.id.btnBack:
                 finish();
