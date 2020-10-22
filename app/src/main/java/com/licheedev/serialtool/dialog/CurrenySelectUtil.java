@@ -3,6 +3,8 @@ package com.licheedev.serialtool.dialog;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +16,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.licheedev.serialtool.R;
+import com.licheedev.serialtool.activity.dapter.CurrenySelectAdapter;
 import com.licheedev.serialtool.activity.deposit.PaperCurrencyDepositActivity;
 import com.licheedev.serialtool.util.constant.Money;
 
@@ -22,21 +25,35 @@ import java.util.List;
 
 public class CurrenySelectUtil {
 
+    /**
+     * 币种选择弹窗
+     * @param context
+     */
     public static void showCurreny(Context context) {
-        List<String> strings = Arrays.asList(Money.CURRENCY_ARRAY);
-        DialogItemAdapter adapter = new DialogItemAdapter(context, strings);
-        LinearLayout view = (LinearLayout) LayoutInflater.from(context).inflate(R.layout.currency_select_view, null, false);
-        ListView currencyList = view.findViewById(R.id.currencyList);
-        currencyList.setAdapter(adapter);
-        AlertDialog alertDialog = new AlertDialog
+        final AlertDialog alertDialog = new AlertDialog
                 .Builder(context)
                 .create();
+
+        List<String> stringlist = Arrays.asList(Money.CURRENCY_ARRAY);
+        CurrenySelectAdapter adapter = new CurrenySelectAdapter(context, stringlist);
+        LinearLayout view = (LinearLayout) LayoutInflater.from(context).inflate(R.layout.currency_select_view, null, false);
+        RecyclerView recyclerView = view.findViewById(R.id.currencyList);
+        GridLayoutManager manager = new GridLayoutManager(context, 3);
+        recyclerView.setLayoutManager(manager);
+        recyclerView.setAdapter(adapter);
+        adapter.setMyViewHolerClicks(new CurrenySelectAdapter.MyViewHolerClicks() {
+            @Override
+            public void onItemClick(int position) {
+                alertDialog.dismiss();
+            }
+        });
+
         alertDialog.setView(view);
         alertDialog.show();
-        alertDialog.getWindow().setLayout(500, 170);
+        alertDialog.getWindow().setLayout(800, 500);
     }
 
-    public static Dialog showContinueDepositDialog(Context context, final PaperCurrencyDepositActivity.Callback callback){
+    public static Dialog showContinueDepositDialog(Context context, final PaperCurrencyDepositActivity.Callback callback) {
         ViewGroup view = (ViewGroup) LayoutInflater.from(context).inflate(R.layout.deposit_continue_view, null, false);
         ImageButton btConfirm = view.findViewById(R.id.btConfirm);
         ImageButton btCancel = view.findViewById(R.id.btCancel);
@@ -64,7 +81,41 @@ public class CurrenySelectUtil {
         return alertDialog;
     }
 
-    public static Dialog showExitFailDialog(Context context,final PaperCurrencyDepositActivity.Callback callback, String message) {
+    /**
+     * 是否结束存款
+     * @param context
+     * @param callback
+     * @return
+     */
+    public static Dialog showOverDepositDialog(Context context, final PaperCurrencyDepositActivity.Callback callback) {
+        ViewGroup view = (ViewGroup) LayoutInflater.from(context).inflate(R.layout.deposit_over_view, null, false);
+        ImageButton btConfirm = view.findViewById(R.id.btConfirm);
+        ImageButton btCancel = view.findViewById(R.id.btCancel);
+
+        final AlertDialog alertDialog = new AlertDialog
+                .Builder(context)
+                .create();
+        alertDialog.setView(view);
+        alertDialog.show();
+        alertDialog.getWindow().setLayout(350, 190);
+
+        btCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                callback.onDialogClick(0, alertDialog);
+            }
+        });
+        btConfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alertDialog.dismiss();
+                callback.onDialogClick(1, alertDialog);
+            }
+        });
+        return alertDialog;
+    }
+
+    public static Dialog showExitFailDialog(Context context, final PaperCurrencyDepositActivity.Callback callback, String message) {
 
         ViewGroup view = (ViewGroup) LayoutInflater.from(context).inflate(R.layout.store_money_tip_view, null, false);
         ImageButton btConfirm = view.findViewById(R.id.btConfirm);

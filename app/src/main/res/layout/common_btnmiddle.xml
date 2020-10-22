@@ -7,10 +7,10 @@
     android:layout_height="30dp"
     android:layout_marginRight="20dp"
     android:layout_marginBottom="20dp"
-    android:background="#18f"
+    android:background="@drawable/blue_button_clicked"
     android:text="@string/upload"
     android:textColor="@color/white"
-    android:textSize="18sp"
+    android:textSize="14dp"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintBottom_toBottomOf="parent" />

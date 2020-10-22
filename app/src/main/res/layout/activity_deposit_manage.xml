@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/deposit_manage"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/tv_current_deposit"
+        android:layout_width="266dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rectangle_solide_blue"
+        android:gravity="center"
+        android:text="@string/current_deposit"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_record"
+        android:layout_width="266dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_solide_blue"
+        android:gravity="center"
+        android:text="@string/print_deposit_record"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_current_deposit"
+        app:layout_constraintStart_toStartOf="@+id/tv_current_deposit"
+        app:layout_constraintTop_toBottomOf="@+id/tv_current_deposit"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_ping"
+        android:layout_width="266dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_solide_baff"
+        android:gravity="center"
+        android:text="@string/ping"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_record"
+        app:layout_constraintStart_toStartOf="@+id/tv_record"
+        app:layout_constraintTop_toBottomOf="@+id/tv_record"
+        tools:ignore="MissingConstraints" />
+
+
+    <ImageButton
+        android:id="@+id/ibtn_back"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/icon_back"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_ping"
+        app:layout_constraintLeft_toRightOf="@+id/tv_ping" />
+
+
+</android.support.constraint.ConstraintLayout>

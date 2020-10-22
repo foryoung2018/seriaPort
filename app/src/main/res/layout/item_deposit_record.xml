@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/black"
-    android:minHeight="40dp"
+    android:minHeight="30dp"
     android:orientation="vertical">
 
     <View
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:minHeight="40dp"
+        android:minHeight="30dp"
         android:orientation="horizontal">
 
         <View
@@ -33,7 +33,7 @@
             android:gravity="center"
             android:text="2018-11-12"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"
@@ -47,7 +47,7 @@
             android:gravity="center"
             android:text="杨磊"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"
@@ -61,7 +61,7 @@
             android:gravity="center"
             android:text="人民币"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"
@@ -75,7 +75,7 @@
             android:gravity="center"
             android:text="1234567890987643213"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"
@@ -89,7 +89,7 @@
             android:gravity="center"
             android:text="1213223"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"
@@ -103,7 +103,7 @@
             android:gravity="center"
             android:text="哈哈哈"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"

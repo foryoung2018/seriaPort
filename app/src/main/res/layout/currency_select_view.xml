@@ -3,14 +3,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="币种选择"
+        android:layout_height="20dp"
         android:gravity="center"
-        android:background="@color/colorPrimary"/>
-    <ListView
+        android:background="@drawable/rectangle_solide_topleft_blue"/>
+
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/currencyList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+
 </LinearLayout>

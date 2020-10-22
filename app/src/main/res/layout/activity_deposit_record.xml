@@ -35,7 +35,7 @@
     <LinearLayout
         android:id="@+id/lltitle"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="30dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/maincolor"
@@ -57,7 +57,7 @@
             android:gravity="center"
             android:text="@string/record_deposittime"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"
@@ -71,7 +71,7 @@
             android:gravity="center"
             android:text="@string/record_depositpeople"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"
@@ -85,7 +85,7 @@
             android:gravity="center"
             android:text="@string/login_currency"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"
@@ -99,7 +99,7 @@
             android:gravity="center"
             android:text="@string/record_account"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"
@@ -113,7 +113,7 @@
             android:gravity="center"
             android:text="@string/record_code"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"
@@ -127,7 +127,7 @@
             android:gravity="center"
             android:text="@string/record_remark"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="12sp" />
 
         <View
             android:layout_width="1dp"

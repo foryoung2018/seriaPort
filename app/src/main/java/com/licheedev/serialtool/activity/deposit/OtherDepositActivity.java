@@ -36,9 +36,10 @@ public class OtherDepositActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ibtn_ok:
+                startActivity(new Intent(OtherDepositActivity.this, DepositManageActivity.class));
                 break;
             case R.id.ibtn_cancel:
-
+                startActivity(new Intent(OtherDepositActivity.this, DepositDetailsActivity.class));
                 break;
             case R.id.btnBack:
                 finish();
