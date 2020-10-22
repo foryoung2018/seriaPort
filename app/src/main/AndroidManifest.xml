@@ -43,7 +43,7 @@
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.deposit.SelectDepositActivity"
+            android:name=".activity.deposit.DepositRecordActivity"
             android:screenOrientation="landscape" />
 
         <activity
@@ -97,7 +97,7 @@
             android:screenOrientation="landscape" />
 
         <activity
-            android:name=".activity.deposit.DepositRecordActivity"
+            android:name=".activity.deposit.SelectDepositActivitys"
             android:screenOrientation="landscape" />
 
     </application>

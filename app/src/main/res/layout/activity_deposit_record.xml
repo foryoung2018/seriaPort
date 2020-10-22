@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:text="@string/print_deposit_record"
         android:textColor="@color/white"
         android:textSize="18sp"
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/textView"
@@ -37,7 +37,6 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="1dp"
         android:layout_marginRight="20dp"
         android:background="@color/maincolor"
         android:gravity="center_vertical"
@@ -46,7 +45,7 @@
         app:layout_constraintStart_toStartOf="@+id/view1"
         app:layout_constraintTop_toBottomOf="@+id/view1">
 
-        <view
+        <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white" />
@@ -58,9 +57,9 @@
             android:gravity="center"
             android:text="@string/record_deposittime"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
-        <view
+        <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white" />
@@ -72,9 +71,9 @@
             android:gravity="center"
             android:text="@string/record_depositpeople"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
-        <view
+        <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white" />
@@ -86,9 +85,9 @@
             android:gravity="center"
             android:text="@string/login_currency"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
-        <view
+        <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white" />
@@ -100,9 +99,9 @@
             android:gravity="center"
             android:text="@string/record_account"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
-        <view
+        <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white" />
@@ -114,9 +113,9 @@
             android:gravity="center"
             android:text="@string/record_code"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
-        <view
+        <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white" />
@@ -128,9 +127,9 @@
             android:gravity="center"
             android:text="@string/record_remark"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="14sp" />
 
-        <view
+        <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
             android:background="@color/white" />
@@ -155,7 +154,7 @@
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-
+        android:layout_marginBottom="60dp"
         />
 
 
