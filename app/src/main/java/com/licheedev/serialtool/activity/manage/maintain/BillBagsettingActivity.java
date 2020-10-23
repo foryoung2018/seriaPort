@@ -2,7 +2,6 @@ package com.licheedev.serialtool.activity.manage.maintain;
 
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.base.BaseActivity;
@@ -11,16 +10,16 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * 系统详细信息
+ * 钞袋设置
  */
-public class SysDetailsInfoActivity extends BaseActivity {
+public class BillBagsettingActivity extends BaseActivity {
 
     @BindView(R.id.btnUpload)
     Button btnUpload;
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_systemdetails_info;
+        return R.layout.activity_bill_bag;
     }
 
     @Override

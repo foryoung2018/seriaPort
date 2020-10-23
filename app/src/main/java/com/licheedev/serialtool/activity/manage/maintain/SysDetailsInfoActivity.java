@@ -1,4 +1,4 @@
-package com.licheedev.serialtool.activity.manage.setting;
+package com.licheedev.serialtool.activity.manage.maintain;
 
 import android.view.View;
 import android.widget.Button;
@@ -11,18 +11,16 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * 串口设定
+ * 系统详细信息
  */
-public class SerialportSetActivity extends BaseActivity {
+public class SysDetailsInfoActivity extends BaseActivity {
 
-    @BindView(R.id.editIp)
-    EditText editIp;
     @BindView(R.id.btnUpload)
     Button btnUpload;
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_serialport_setting;
+        return R.layout.activity_systemdetails_info;
     }
 
     @Override

@@ -9,16 +9,18 @@
     <color name="color00baff">#00BAFF</color>
     <color name="maincolor">#007EFF</color>
     <color name="log_bg">#e5e5e5</color>
-    
+
     <color name="transparent">#00000000</color>
     <color name="on_pressed">#30bfbfbf</color>
     <color name="secondary_text">#727272</color>
     <color name="divider">#B6B6B6</color>
 
+    <color name="red">#ff0000</color>
+    <color name="yello">#ffc000</color>
     <color name="black">#000000</color>
     <color name="white">#ffffffff</color>
     <color name="color_888888">#888888</color>
     <color name="color_20ffffff">#20ffffff</color>
-    
+
 
 </resources>

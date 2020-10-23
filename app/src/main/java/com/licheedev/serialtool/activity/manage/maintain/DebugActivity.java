@@ -1,9 +1,11 @@
 package com.licheedev.serialtool.activity.manage.maintain;
 
+import android.content.Intent;
 import android.view.View;
 
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.base.BaseActivity;
+import com.licheedev.serialtool.activity.manage.manage.DeviceManageActivity;
 
 import butterknife.OnClick;
 
@@ -25,8 +27,8 @@ public class DebugActivity extends BaseActivity {
             case R.id.tvsysytemclear:
                // startActivity(new Intent(DebugActivity.this, UserManageActivity.class));
                 break;
-            case R.id.tvsysdebug:
-               // startActivity(new Intent(DebugActivity.this, DeviceManageActivity.class));
+            case R.id.tvsysdebug: //系统调试
+                startActivity(new Intent(DebugActivity.this, SystemDebugActivity.class));
                 break;
             case R.id.btnBack:
                 finish();

@@ -33,8 +33,10 @@ public class MaintainActivity extends BaseActivity {
                 startActivity(new Intent(this, DebugActivity.class));
                 break;
             case R.id.tvControl:
+                startActivity(new Intent(this, DeviceControlActivity.class));
                 break;
             case R.id.tvErrorClear:
+                startActivity(new Intent(this, DepositErrorActivity.class));
                 break;
             case R.id.tvbillinit:
                 break;

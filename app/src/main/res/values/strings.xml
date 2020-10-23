@@ -138,5 +138,35 @@
     <string name="bankset">钞袋设置</string>
     <string name="systemclear">系统清理</string>
     <string name="systemdubug">系统调试</string>
+    <string name="device_control">设备控制</string>
+    <string name="printdevice_debug">打印机调试</string>
+    <string name="scanner_debug">扫描器调试</string>
+    <string name="mandatorymode">强制模式</string>
+    <string name="deposit_error">存款异常处理</string>
+    <string name="fault_clear">故障清除</string>
+    <string name="device_check">设备自检</string>
+    <string name="serial_num">系列号</string>
+    <string name="device_num">设备型号</string>
+    <string name="software_num">软件版本号</string>
+    <string name="zhubannum">主板版本号</string>
+    <string name="imagenum">图像版本号</string>
+    <string name="softwareupdate">软件更新</string>
+    <string name="gujianupdate">固件更新</string>
+    <string name="imagebanupdate">图像板更新</string>
+    <string name="yujingrongliang">预警容量</string>
+    <string name="suggest0">建议输入0-80</string>
+    <string name="senser_status">传感器状态</string>
+    <string name="valvejiaodui">阀值校对</string>
+    <string name="senser_name">传感器名称</string>
+    <string name="senser">传感器</string>
+    <string name="loacation">位置</string>
+    <string name="factoryvalve">出厂阀值</string>
+    <string name="newvalvenum">新阀值</string>
+    <string name="current_valtage">当前电压</string>
+    <string name="opertion">操作</string>
+    <string name="refersh">刷新</string>
+    <string name="calibration">校准</string>
+    <string name="update">修改</string>
+    <string name="start">启用</string>
 
 </resources>

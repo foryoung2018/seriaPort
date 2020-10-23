@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="@string/set_device"
+        android:text="@string/deposit_error"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,25 +31,25 @@
         tools:ignore="MissingConstraints">
 
         <TextView
-            android:id="@+id/tvUsermanage"
+            android:id="@+id/tvfaultClear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableTop="@mipmap/deviceset2"
+            android:drawableTop="@mipmap/error1"
             android:drawablePadding="10dp"
-            android:text="@string/system_time"
+            android:text="@string/fault_clear"
             android:textColor="@color/white"
             android:gravity="center"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/tvDeviceManage"
+            android:id="@+id/tvDevicecheck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:drawableTop="@mipmap/deviceset2"
+            android:drawableTop="@mipmap/error2"
             android:drawablePadding="10dp"
-            android:text="@string/language_select"
+            android:text="@string/device_check"
             android:textColor="@color/white"
             android:gravity="center"
             android:textSize="14sp"

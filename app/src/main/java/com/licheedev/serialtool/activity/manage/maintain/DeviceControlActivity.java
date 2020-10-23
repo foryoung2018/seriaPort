@@ -1,4 +1,4 @@
-package com.licheedev.serialtool.activity.manage.setting;
+package com.licheedev.serialtool.activity.manage.maintain;
 
 import android.view.View;
 import android.widget.Button;
@@ -11,34 +11,31 @@ import butterknife.BindView;
 import butterknife.OnClick;
 
 /**
- * 串口设定
+ * 设备控制
  */
-public class SerialportSetActivity extends BaseActivity {
+public class DeviceControlActivity extends BaseActivity {
 
-    @BindView(R.id.editIp)
-    EditText editIp;
-    @BindView(R.id.btnUpload)
-    Button btnUpload;
+    @BindView(R.id.btLogout)
+    Button mandatorymodeBtn;
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_serialport_setting;
+        return R.layout.activity_device_control;
     }
 
     @Override
     protected void initView() {
         super.initView();
-        btnUpload.setText(getResources().getString(R.string.set));
+        mandatorymodeBtn.setText(getResources().getString(R.string.mandatorymode));
     }
 
-    @OnClick({R.id.btnBack, R.id.btnUpload, R.id.btLogout})
+    @OnClick({R.id.btnBack, R.id.btLogout})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btnBack:
                 finish();
                 break;
-            case R.id.btnUpload:
-                break;
+
             case R.id.btLogout:
                 break;
 

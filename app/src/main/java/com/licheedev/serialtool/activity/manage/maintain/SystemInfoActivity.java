@@ -1,5 +1,6 @@
 package com.licheedev.serialtool.activity.manage.maintain;
 
+import android.content.Intent;
 import android.view.View;
 
 import com.licheedev.serialtool.R;
@@ -9,7 +10,6 @@ import butterknife.OnClick;
 
 /**
  * 系统信息
- *
  */
 public class SystemInfoActivity extends BaseActivity {
 
@@ -19,10 +19,12 @@ public class SystemInfoActivity extends BaseActivity {
         return R.layout.activity_systeminfo;
     }
 
-    @OnClick({ R.id.btnBack, R.id.btLogout})
+    @OnClick({R.id.tvsysteminfo, R.id.btnBack, R.id.btLogout})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-
+            case R.id.tvsysteminfo:
+                startActivity(new Intent(this, SysDetailsInfoActivity.class));
+                break;
             case R.id.btnBack:
                 finish();
                 break;

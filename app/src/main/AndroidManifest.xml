@@ -152,6 +152,31 @@
             android:name=".activity.manage.maintain.DebugActivity"
             android:screenOrientation="landscape" />
 
+        <activity
+            android:name=".activity.manage.maintain.DeviceControlActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.maintain.DepositErrorActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.maintain.SysDetailsInfoActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.maintain.BillBagsettingActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.maintain.SystemDebugActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.maintain.DeviceSelfcheckActivity"
+            android:screenOrientation="landscape" />
+
+
     </application>
 
 </manifest>
