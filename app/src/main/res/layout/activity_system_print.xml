@@ -65,7 +65,7 @@
             android:drawableTop="@mipmap/print3"
             android:drawablePadding="10dp"
             android:gravity="center"
-            android:text="@string/print_clear_record"
+            android:text="@string/deal_record"
             android:textColor="@color/white"
             android:textSize="14sp"
             tools:ignore="MissingConstraints" />

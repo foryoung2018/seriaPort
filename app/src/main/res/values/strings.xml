@@ -140,6 +140,7 @@
     <string name="systemdubug">系统调试</string>
     <string name="device_control">设备控制</string>
     <string name="printdevice_debug">打印机调试</string>
+    <string name="print">打印</string>
     <string name="scanner_debug">扫描器调试</string>
     <string name="mandatorymode">强制模式</string>
     <string name="deposit_error">存款异常处理</string>
@@ -168,5 +169,24 @@
     <string name="calibration">校准</string>
     <string name="update">修改</string>
     <string name="start">启用</string>
+    <string name="clearing_record">清机记录</string>
+    <string name="flightno">班次号</string>
+    <string name="billnumber">钞袋号</string>
+    <string name="oldbillnumer">旧钞袋号</string>
+    <string name="fengqianhao">封铅号</string>
+    <string name="exchange_people">更换人</string>
+    <string name="exchange_time">更换时间</string>
+    <string name="exchange_status">更换状态</string>
+
+    <string name="deal_record">交易记录</string>
+    <string name="starttime">起始时间</string>
+    <string name="endtime">结束时间</string>
+    <string name="account">账号</string>
+    <string name="branches">网点</string>
+    <string name="name">姓名</string>
+    <string name="classify">分类</string>
+    <string name="date">日期</string>
+    <string name="status">状态</string>
+    <string name="details">详细</string>
 
 </resources>

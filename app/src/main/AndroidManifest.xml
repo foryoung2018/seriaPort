@@ -176,6 +176,14 @@
             android:name=".activity.manage.maintain.DeviceSelfcheckActivity"
             android:screenOrientation="landscape" />
 
+        <activity
+            android:name=".activity.manage.print.ClearingRecordActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.print.DealRecordActivity"
+            android:screenOrientation="landscape" />
+
 
     </application>
 
