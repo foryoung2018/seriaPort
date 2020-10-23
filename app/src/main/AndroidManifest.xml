@@ -184,6 +184,14 @@
             android:name=".activity.manage.print.DealRecordActivity"
             android:screenOrientation="landscape" />
 
+        <activity
+            android:name=".activity.manage.update.AndroidUpdateActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.manage.update.UpdateSettingActivity"
+            android:screenOrientation="landscape" />
+
 
     </application>
 

@@ -70,6 +70,7 @@
     <string name="print_deposit_record">存款记录</string>
     <string name="version_update">版本更新</string>
     <string name="update_set">更新设置</string>
+    <string name="auto_update">自动更新</string>
     <string name="update_android">安卓更新</string>
     <string name="register">注册</string>
     <string name="device_register">设备注册</string>
@@ -177,7 +178,6 @@
     <string name="exchange_people">更换人</string>
     <string name="exchange_time">更换时间</string>
     <string name="exchange_status">更换状态</string>
-
     <string name="deal_record">交易记录</string>
     <string name="starttime">起始时间</string>
     <string name="endtime">结束时间</string>
@@ -188,5 +188,6 @@
     <string name="date">日期</string>
     <string name="status">状态</string>
     <string name="details">详细</string>
+    <string name="download">下载</string>
 
 </resources>

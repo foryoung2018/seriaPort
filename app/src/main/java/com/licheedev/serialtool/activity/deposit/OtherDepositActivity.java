@@ -20,10 +20,6 @@ import butterknife.OnClick;
  */
 public class OtherDepositActivity extends BaseActivity {
 
-    @BindView(R.id.rd_group1)
-    RadioGroup rd_group1;
-    @BindView(R.id.rd_group2)
-    RadioGroup rd_group2;
     @BindView(R.id.editText)
     EditText editText;
 

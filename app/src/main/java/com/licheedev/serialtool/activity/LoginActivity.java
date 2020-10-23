@@ -24,8 +24,8 @@ public class LoginActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btLogin:
-                 startActivity(new Intent(this, SetManageActivity.class));
-               // startActivity(new Intent(this, SelectDepositActivitys.class));
+               //  startActivity(new Intent(this, SetManageActivity.class));
+                startActivity(new Intent(this, SelectDepositActivitys.class));
                 finish();
                 break;
         }

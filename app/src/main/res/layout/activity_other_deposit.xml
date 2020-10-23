@@ -16,72 +16,56 @@
         android:textColor="@color/white"
         android:textSize="18sp" />
 
-    <RadioGroup
-        android:id="@+id/rd_group1"
+    <com.licheedev.serialtool.weight.MultiLineRadioGroup
+        android:id="@+id/multiply"
         android:layout_width="wrap_content"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/rd_coin"
-            android:layout_width="126dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/rectangle_solide_blue"
-            android:button="@null"
-            android:checked="true"
-            android:drawableRight="@drawable/radio_button"
-            android:gravity="center"
-            android:paddingRight="30dp"
-            android:text="@string/coin"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
-
-        <RadioButton
-            android:id="@+id/rd_check"
-            android:layout_width="126dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/rectangle_solide_blue"
-            android:button="@null"
-            android:drawableRight="@drawable/radio_button"
-            android:gravity="center"
-            android:paddingRight="30dp"
-            android:text="@string/check"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
-
-        <RadioButton
-            android:layout_width="65dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/rectangle_solide_blue"
-            android:button="@null"
-            android:drawableRight="@drawable/radio_button"
-            android:gravity="center"
-            android:paddingRight="30dp"
-            android:text="@string/check"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:visibility="invisible" />
-
-    </RadioGroup>
-
-    <LinearLayout
-        android:id="@+id/lin2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/rd_group1"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal">
-
-        <RadioGroup
-            android:id="@+id/rd_group2"
+        <LinearLayout
+            android:id="@+id/ll_pay_1"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rd_coin"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle_solide_blue"
+                android:button="@null"
+                android:checked="true"
+                android:drawableRight="@drawable/radio_button"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="@string/coin"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rd_check"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/rectangle_solide_blue"
+                android:button="@null"
+                android:drawableRight="@drawable/radio_button"
+                android:gravity="center"
+                android:paddingRight="30dp"
+                android:text="@string/check"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pay_2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
             <RadioButton
@@ -110,71 +94,63 @@
                 android:text="@string/other"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
+        </LinearLayout>
+    </com.licheedev.serialtool.weight.MultiLineRadioGroup>
 
-        </RadioGroup>
 
-        <ImageButton
-            android:id="@+id/ibtn_ok"
-            android:layout_width="66dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            android:background="@color/color00baff"
-            android:src="@mipmap/ic_right"
-            app:layout_constraintBottom_toBottomOf="@+id/llNew"
-            app:layout_constraintLeft_toRightOf="@+id/llNew" />
-
-    </LinearLayout>
+    <ImageButton
+        android:id="@+id/ibtn_ok"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/multiply"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/multiply"
+        android:background="@drawable/ok_cancel_bg_click"
+        android:src="@mipmap/ic_right" />
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lin2"
+        android:id="@+id/linear"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/multiply"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_strok_blue"
         android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/linuser"
-            android:layout_width="260dp"
-            android:layout_height="40dp"
-            android:background="@drawable/rectangle_strok_blue"
-            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="@string/monery_number"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="15dp"
-                android:text="@string/monery_number"
-                android:textColor="@color/white"
-                android:textSize="14sp" />
-
-            <EditText
-                android:id="@+id/editText"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:ems="10"
-                android:hint="@string/input_money"
-                android:inputType="number"
-                android:background="@null"
-                android:textColorHint="#999999"
-                android:textSize="14sp" />
-
-        </LinearLayout>
-
-        <ImageButton
-            android:id="@+id/ibtn_cancel"
-            android:layout_width="66dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="20dp"
-            android:background="@color/color00baff"
-            android:src="@mipmap/ic_cancel"
-            app:layout_constraintBottom_toBottomOf="@+id/llLead"
-            app:layout_constraintLeft_toRightOf="@+id/llLead" />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/input_money"
+            android:inputType="number"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
 
 
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibtn_cancel"
+        android:layout_width="66dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/linear"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/linear"
+        android:background="@drawable/ok_cancel_bg_click"
+        android:src="@mipmap/ic_cancel" />
 
 
     <Button
@@ -184,7 +160,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="30dp"
         android:layout_marginBottom="30dp"
-        android:background="#18f"
+        android:background="@drawable/blue_button_clicked"
         android:text="@string/back"
         android:textColor="@color/white" />
 
