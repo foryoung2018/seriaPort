@@ -1,16 +1,15 @@
 package com.licheedev.serialtool.activity.manage.maintain;
 
-import android.app.Dialog;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.base.BaseActivity;
-import com.licheedev.serialtool.activity.dapter.BaseRecyclerAdapter;
-import com.licheedev.serialtool.activity.dapter.RecyclerViewHolder;
+import com.licheedev.serialtool.activity.dapter.TabAdapter;
+import com.licheedev.serialtool.activity.manage.maintain.fragment.SenserStatusFragment;
+import com.licheedev.serialtool.activity.manage.maintain.fragment.ValveProofreadFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,15 +20,20 @@ import butterknife.OnClick;
 /**
  * 设备自检
  */
-public class DeviceSelfcheckActivity extends BaseActivity implements BaseRecyclerAdapter.Delegate {
+public class DeviceSelfcheckActivity extends BaseActivity {
 
-    @BindView(R.id.textView)
-    TextView tvTitle;
-    @BindView(R.id.recyclerview)
-    RecyclerView mRecyclerView;
+    @BindView(R.id.tab_layout)
+    TabLayout tabLayout;
+    @BindView(R.id.viewpager)
+    ViewPager viewPager;
 
-    private BaseRecyclerAdapter adapter;
-    private List<Integer> list = new ArrayList<>();
+    private TabAdapter tabAdapter;    //定义Tab 的adapter
+    private List<Fragment> list_fragment; //定义要装fragment的列表
+    private List<String> list_title;   //tab名称列表
+
+    private SenserStatusFragment fragment1;
+    private ValveProofreadFragment fragment2;
+
 
     @Override
     protected int getLayoutId() {
@@ -39,16 +43,28 @@ public class DeviceSelfcheckActivity extends BaseActivity implements BaseRecycle
     @Override
     protected void initView() {
         super.initView();
+        //初始化各fragment
+        fragment1 = new SenserStatusFragment();
+        fragment2 = new ValveProofreadFragment();
+        //将fragment装进列表中
+        list_fragment = new ArrayList<>();
+        list_fragment.add(fragment1);
+        list_fragment.add(fragment2);
 
-        LinearLayoutManager manager = new LinearLayoutManager(this);
-        mRecyclerView.setLayoutManager(manager);
-        adapter = new BaseRecyclerAdapter(this, this);
-        mRecyclerView.setAdapter(adapter);
+        list_title = new ArrayList<>();
+        list_title.add(getResources().getString(R.string.senser_status));
+        list_title.add(getResources().getString(R.string.valvejiaodui));
+        //为TabLayout添加tab名称
+        tabLayout.addTab(tabLayout.newTab().setText(list_title.get(0)));
+        tabLayout.addTab(tabLayout.newTab().setText(list_title.get(1)));
+        tabAdapter = new TabAdapter(getSupportFragmentManager(), list_fragment, list_title);
 
-        list.add(1);
-        list.add(1);
-        list.add(1);
-        adapter.notifyDataSetChanged();
+        //viewpager加载adapter
+        viewPager.setAdapter(tabAdapter);
+        viewPager.setOffscreenPageLimit(3);
+        //tab_FindFragment_title.setViewPager(vp_FindFragment_pager);
+        //TabLayout加载viewpager
+        tabLayout.setupWithViewPager(viewPager);
     }
 
     @OnClick({R.id.btnBack, R.id.btnRerfsh, R.id.btnjiaozhun, R.id.btnLogout})
@@ -69,31 +85,5 @@ public class DeviceSelfcheckActivity extends BaseActivity implements BaseRecycle
         }
     }
 
-    @Override
-    public List<Integer> getData() {
-        return list;
-    }
 
-    @Override
-    public int getView(ViewGroup parent, int viewType) {
-        return R.layout.item_device_selfcheck;
-    }
-
-    @Override
-    public <T> void bindView(RecyclerViewHolder holder, int position, T item) {
-        View viewTop = holder.getView(R.id.viewTop);
-        View viewBottom = holder.getView(R.id.viewBottom);
-        if (position == 0) {
-            viewTop.setVisibility(View.GONE);
-        } else {
-            viewTop.setVisibility(View.VISIBLE);
-        }
-
-        if (position == list.size() - 1) {
-            viewBottom.setVisibility(View.VISIBLE);
-        } else {
-            viewBottom.setVisibility(View.GONE);
-        }
-
-    }
 }

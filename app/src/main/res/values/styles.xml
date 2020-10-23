@@ -19,5 +19,10 @@
         <item name="android:textSize">@dimen/default_text_size</item>
     </style>
 
+    <!--tablayout的字体大小-->
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">12sp</item>
+
+    </style>
 
 </resources>
