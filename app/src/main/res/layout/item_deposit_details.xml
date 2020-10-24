@@ -27,6 +27,7 @@
             android:background="@color/white" />
 
         <TextView
+            android:id="@+id/tvDeposit"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -41,6 +42,7 @@
             android:background="@color/white" />
 
         <TextView
+            android:id="@+id/tvCount"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -55,6 +57,7 @@
             android:background="@color/white" />
 
         <TextView
+            android:id="@+id/tvSum"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

@@ -102,6 +102,7 @@ public class CurrenySelectUtil {
         btCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                alertDialog.dismiss();
                 callback.onDialogClick(0, alertDialog);
             }
         });

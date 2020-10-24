@@ -13,6 +13,7 @@ public class LogManager {
     public static final int COUNT_COMMAND = 0x1;
     public static final int EXIT_WORK_COMMAND = 0x2;
     public static final int SAVE_SUCCESS_COMMAND = 0x3;
+    public static final int FINISH_DEPOSIT = 0x4;
 
     public final List<IMessage> messages;
     private boolean mAutoEnd = true;

@@ -26,6 +26,7 @@
 
         <activity
             android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan"
             android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

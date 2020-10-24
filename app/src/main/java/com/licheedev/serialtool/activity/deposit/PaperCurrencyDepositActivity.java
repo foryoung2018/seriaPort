@@ -27,10 +27,13 @@ import butterknife.OnClick;
 
 import static com.licheedev.serialtool.comn.message.LogManager.COUNT_COMMAND;
 import static com.licheedev.serialtool.comn.message.LogManager.EXIT_WORK_COMMAND;
+import static com.licheedev.serialtool.comn.message.LogManager.FINISH_DEPOSIT;
 import static com.licheedev.serialtool.comn.message.LogManager.SAVE_SUCCESS_COMMAND;
 
 public class PaperCurrencyDepositActivity extends BaseActivity {
 
+    public static final int REQUEST_CODE_DEPOSIT = 1;
+    public static final int RESULT_CODE_DEPOSIT = 1111;
     int[] commandWorkMode = new int[]{0xA1, 0xA2, 0xA3, 0xA4,/*STX 4byte*/
             0x12, 0x00,/*size 2byte*/
             0x21,/*CMD 1byte*/
@@ -85,7 +88,12 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ibtn_ok:
+//                if(deposit != null && deposit.isEmpty()){
+//                    return;
+//                }
                 SerialPortManager.instance().sendSaveCommand();
+                startActivityForResult(new Intent(this, DepositDetailsActivity.class),REQUEST_CODE_DEPOSIT);
+//                startActivity(new Intent(this, DepositDetailsActivity.class));
                 break;
             case R.id.ibtn_cancel:
                 if (deposit == null || deposit.isEmpty()) {
@@ -200,13 +208,24 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
                 }
             }
             break;
-            case SAVE_SUCCESS_COMMAND: {
-                SerialPortManager.instance().sendSaveAck();
+//            case SAVE_SUCCESS_COMMAND: {
+//                SerialPortManager.instance().sendSaveAck();
+//            }
+//            break;
+            case FINISH_DEPOSIT:{
+                finish();
             }
             break;
         }
 
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == RESULT_CODE_DEPOSIT){
+            finish();
+        }
     }
 
     public interface Callback {

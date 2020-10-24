@@ -433,8 +433,8 @@ public class SerialReadThread extends Thread {
             switch (status){
                 case 6:
                     LogPlus.e("read_thread","纸币存储成功 ");
-                    amountReceiveMoney(received);
-                    amountSaveMoney(received);
+//                    amountReceiveMoney(received);
+//                    amountSaveMoney(received);
                     break;
                 case 16:
                     LogPlus.e("read_thread","纸币存储失败 ");
