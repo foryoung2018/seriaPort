@@ -22,8 +22,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:id="@+id/ibtn_record"
-        android:background="@drawable/rectangle_solide_blue"
-        android:scaleType="fitCenter"
+        android:background="@null"
+        android:scaleType="fitXY"
         android:src="@mipmap/home_record" />
 
     <LinearLayout
@@ -38,8 +38,8 @@
             android:id="@+id/ibtn_paper_select"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:background="@drawable/rectangle_solide_blue"
-            android:scaleType="center"
+            android:scaleType="fitXY"
+            android:background="@null"
             android:src="@mipmap/home_money" />
 
         <ImageButton
@@ -47,7 +47,8 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginLeft="70dp"
-            android:background="@drawable/rectangle_solide_blue"
+            android:background="@null"
+            android:scaleType="fitXY"
             android:src="@mipmap/home_menu" />
 
 <!--        <ImageButton-->

@@ -36,6 +36,9 @@ public class LoginActivity extends BaseActivity {
                 if(checkLogin()){
                     startActivity(new Intent(this, SelectDepositActivitys.class));
                     finish();
+                }else{
+                    startActivity(new Intent(this, SetManageActivity.class));
+                    finish();
                 }
                 break;
         }

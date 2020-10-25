@@ -14,6 +14,7 @@
         android:layout_marginTop="50dp"
         android:textColor="@color/white"
         android:text="请把纸币放入存款口"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
