@@ -278,7 +278,17 @@ public class MainActivity extends BaseActivity  {
 
 
 
-
+    private static void xor() {
+        int[] command3=new  int[]{0xA1,0xA2,0xA3,0xA4,/*STX 4byte*/
+                0x04,0x00,/*size 2byte*/
+                0x25,/*CMD 1byte*/
+                0xBB,0xBB,0x38};
+        int a  = 0xA1;
+        for(int i = 1; i< command3.length-1; i++){
+            a = a ^ command3[i];
+        }
+        System.out.println(a);
+    }
 
 
 }
