@@ -49,7 +49,8 @@ public class LoginActivity extends BaseActivity {
     private boolean checkLogin() {
         String user = editText.getText().toString();
         String passwd = editText2.getText().toString();
-        return "CDN".equals(user) && "CDN".equals(passwd);
+//        return "123".equals(user) && "123".equals(passwd);
+        return true;
     }
 
 
