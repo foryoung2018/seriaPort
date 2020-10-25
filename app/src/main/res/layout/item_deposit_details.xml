@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/color00baff"
-    android:minHeight="30dp"
+    android:minHeight="40dp"
     android:orientation="vertical">
 
     <View
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:minHeight="30dp"
+        android:minHeight="40dp"
         android:orientation="horizontal">
 
         <View
@@ -34,7 +34,7 @@
             android:gravity="center"
             android:text="100"
             android:textColor="@color/white"
-            android:textSize="12sp" />
+            android:textSize="24sp" />
 
         <View
             android:layout_width="1dp"
@@ -49,7 +49,7 @@
             android:gravity="center"
             android:text="3"
             android:textColor="@color/white"
-            android:textSize="12sp" />
+            android:textSize="24sp" />
 
         <View
             android:layout_width="1dp"
@@ -64,7 +64,7 @@
             android:gravity="center"
             android:text="300"
             android:textColor="@color/white"
-            android:textSize="12sp" />
+            android:textSize="24sp" />
 
         <View
             android:layout_width="1dp"
