@@ -28,6 +28,7 @@ import butterknife.OnClick;
 import static com.licheedev.serialtool.comn.message.LogManager.COUNT_COMMAND;
 import static com.licheedev.serialtool.comn.message.LogManager.EXIT_WORK_COMMAND;
 import static com.licheedev.serialtool.comn.message.LogManager.FINISH_DEPOSIT;
+import static com.licheedev.serialtool.comn.message.LogManager.SEARCH_LEAD;
 
 public class PaperCurrencyDepositActivity extends BaseActivity {
 
@@ -224,6 +225,10 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
 //            break;
             case FINISH_DEPOSIT: {
                 finish();
+            }
+            break;
+            case SEARCH_LEAD:{ // 查询退钞
+                ToastUtil.show(this,"查询退钞命令完成，结果待解析～");
             }
             break;
         }

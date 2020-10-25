@@ -18,6 +18,7 @@ import java.io.InputStream;
 import java.util.HashMap;
 
 import static com.licheedev.serialtool.comn.message.LogManager.SAVE_SUCCESS_COMMAND;
+import static com.licheedev.serialtool.comn.message.LogManager.SEARCH_LEAD;
 
 /**
  * 读串口线程
@@ -452,6 +453,7 @@ public class SerialReadThread extends Thread {
         else if((char)(received[6]&0xff)== 0x33)
         {
             LogPlus.e("read_thread","查询退钞原因 " + hexStr);
+            LogManager.instance().post(new LogManager.ReceiveData(received, SEARCH_LEAD));
         }
         else
         {hexstr1=hexStr;}
