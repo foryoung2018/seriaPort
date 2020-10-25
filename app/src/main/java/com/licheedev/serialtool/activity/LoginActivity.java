@@ -39,6 +39,8 @@ public class LoginActivity extends BaseActivity {
                 }
                 break;
         }
+
+
     }
 
     private boolean checkLogin() {

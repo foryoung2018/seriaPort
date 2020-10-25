@@ -8,10 +8,10 @@
 
     <ImageButton
         android:id="@+id/btnCurrency"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/rectangle_solide_blue"
         android:src="@mipmap/ic_setting"
         app:layout_constraintRight_toRightOf="parent"
@@ -24,22 +24,23 @@
         android:layout_marginTop="50dp"
         android:text="@string/plase_paper_put"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/llOriginal"
-        android:layout_width="266dp"
-        android:layout_height="40dp"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginStart="130dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/rectangle_solide_blue"
         android:orientation="horizontal"
         android:paddingLeft="20dp"
         android:paddingRight="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints">
 
@@ -50,7 +51,7 @@
             android:gravity="center_vertical"
             android:text="@string/currency_numer"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="26sp" />
 
         <TextView
             android:id="@+id/tvCurrencyNum"
@@ -60,21 +61,20 @@
             android:gravity="center_vertical"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="26sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llNew"
-        android:layout_width="266dp"
-        android:layout_height="40dp"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/rectangle_solide_blue"
         android:orientation="horizontal"
         android:paddingLeft="20dp"
         android:paddingRight="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/llOriginal"
         app:layout_constraintTop_toBottomOf="@+id/llOriginal"
         tools:ignore="MissingConstraints">
 
@@ -84,7 +84,7 @@
             android:gravity="center_vertical"
             android:text="@string/monery_number"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="26sp" />
 
         <TextView
             android:id="@+id/tvMoneyNum"
@@ -94,21 +94,20 @@
             android:gravity="center_vertical"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="26sp" />
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/llLead"
-        android:layout_width="266dp"
-        android:layout_height="40dp"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
         android:layout_marginTop="30dp"
         android:background="@drawable/rectangle_solide_blue"
         android:orientation="horizontal"
         android:paddingLeft="20dp"
         android:paddingRight="10dp"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/llNew"
         app:layout_constraintTop_toBottomOf="@+id/llNew"
         tools:ignore="MissingConstraints">
 
@@ -118,7 +117,7 @@
             android:gravity="center_vertical"
             android:text="@string/refuse_money"
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="26sp" />
 
         <TextView
             android:id="@+id/tvRrfuse"
@@ -128,7 +127,7 @@
             android:gravity="center_vertical"
             android:text=""
             android:textColor="@color/white"
-            android:textSize="18sp" />
+            android:textSize="26sp" />
 
     </LinearLayout>
 
@@ -147,32 +146,31 @@
 
     <ImageButton
         android:id="@+id/ibtn_ok"
-        android:layout_width="66dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
         android:background="@drawable/ok_cancel_bg_click"
         android:src="@mipmap/ic_right"
         app:layout_constraintBottom_toBottomOf="@+id/llNew"
-        app:layout_constraintLeft_toRightOf="@+id/llNew" />
+        app:layout_constraintLeft_toRightOf="@+id/llNew"
+        app:layout_constraintTop_toTopOf="@+id/llNew" />
 
     <ImageButton
         android:id="@+id/ibtn_cancel"
-        android:layout_width="66dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
         android:background="@drawable/ok_cancel_bg_click"
         android:src="@mipmap/ic_cancel"
         app:layout_constraintBottom_toBottomOf="@+id/llLead"
-        app:layout_constraintLeft_toRightOf="@+id/llLead" />
+        app:layout_constraintLeft_toRightOf="@+id/llLead"
+        app:layout_constraintTop_toTopOf="@+id/llLead" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
-        android:visibility="invisible"
         tools:layout_editor_absoluteX="-1dp"
         tools:layout_editor_absoluteY="363dp"
         tools:ignore="MissingConstraints" />

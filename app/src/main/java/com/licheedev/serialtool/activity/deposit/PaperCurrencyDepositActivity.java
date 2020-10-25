@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.licheedev.myutils.LogPlus;
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.MainActivity;
+import com.licheedev.serialtool.activity.ScreenUtil;
 import com.licheedev.serialtool.activity.base.BaseActivity;
 import com.licheedev.serialtool.comn.SerialPortManager;
 import com.licheedev.serialtool.comn.message.LogManager;
@@ -72,12 +73,17 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override
     protected void onResume() {
         super.onResume();
         swtichWorkMode();
+
+        int screenWidth = ScreenUtil.getScreenWidth(this);
+        int screenHeight = ScreenUtil.getScreenHeight(this);
+        int a = 0;
     }
 
     private void swtichWorkMode() {

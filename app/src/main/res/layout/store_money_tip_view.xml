@@ -7,8 +7,8 @@
 
     <ImageButton
         android:id="@+id/btConfirm"
-        android:layout_width="60dp"
-        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
         android:layout_marginTop="20dp"
         android:background="@color/color00baff"
         android:src="@mipmap/ic_right"

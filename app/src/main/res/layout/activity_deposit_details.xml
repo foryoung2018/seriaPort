@@ -332,7 +332,7 @@
         <Button
             android:id="@+id/btnOverDeposit"
             android:layout_width="120dp"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
             android:layout_marginTop="5dp"
             android:background="@mipmap/dedetails_btn_bg"
             android:text="@string/over_deposit"
@@ -344,8 +344,8 @@
 
     <Button
         android:id="@+id/btnContiniu"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="10dp"
