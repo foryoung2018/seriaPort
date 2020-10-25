@@ -28,7 +28,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
@@ -36,28 +36,28 @@
 
         <ImageButton
             android:id="@+id/ibtn_paper_select"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:scaleType="fitXY"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:background="@drawable/blue_button_clicked"
+            android:scaleType="fitXY"
             android:src="@mipmap/home_money" />
 
         <ImageButton
             android:id="@+id/ibtn_other_select"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="70dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
             android:background="@drawable/blue_button_clicked"
             android:scaleType="fitXY"
+            android:layout_marginLeft="50dp"
             android:src="@mipmap/home_menu" />
 
-<!--        <ImageButton-->
-<!--            android:id="@+id/ibtn_record"-->
-<!--            android:layout_width="100dp"-->
-<!--            android:layout_height="100dp"-->
-<!--            android:layout_marginLeft="30dp"-->
-<!--            android:background="@drawable/rectangle_solide_blue"-->
-<!--            android:src="@mipmap/home_time" />-->
+        <!--        <ImageButton-->
+        <!--            android:id="@+id/ibtn_record"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="100dp"-->
+        <!--            android:layout_marginLeft="30dp"-->
+        <!--            android:background="@drawable/rectangle_solide_blue"-->
+        <!--            android:src="@mipmap/home_time" />-->
 
 
     </LinearLayout>

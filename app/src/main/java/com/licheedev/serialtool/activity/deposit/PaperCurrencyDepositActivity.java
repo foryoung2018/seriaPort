@@ -12,6 +12,7 @@ import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.MainActivity;
 import com.licheedev.serialtool.activity.ScreenUtil;
 import com.licheedev.serialtool.activity.base.BaseActivity;
+import com.licheedev.serialtool.comn.Device;
 import com.licheedev.serialtool.comn.SerialPortManager;
 import com.licheedev.serialtool.comn.message.LogManager;
 import com.licheedev.serialtool.dialog.CurrenySelectUtil;
@@ -122,8 +123,9 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
             case R.id.btnCurrency: //币种选择
                 CurrenySelectUtil.showCurreny(this);
                 break;
-            case R.id.mLead: // 查看拒钞详情
-                ToastUtil.show(this,"111");
+            case R.id.llLead: // 查看拒钞详情
+                // Step 1： 发送查询拒钞原因指令
+                SerialPortManager.instance().sendLeadCommand();
                 break;
         }
     }
