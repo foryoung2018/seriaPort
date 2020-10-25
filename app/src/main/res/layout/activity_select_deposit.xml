@@ -39,7 +39,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:scaleType="fitXY"
-            android:background="@null"
+            android:background="@drawable/blue_button_clicked"
             android:src="@mipmap/home_money" />
 
         <ImageButton
@@ -47,7 +47,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_marginLeft="70dp"
-            android:background="@null"
+            android:background="@drawable/blue_button_clicked"
             android:scaleType="fitXY"
             android:src="@mipmap/home_menu" />
 
