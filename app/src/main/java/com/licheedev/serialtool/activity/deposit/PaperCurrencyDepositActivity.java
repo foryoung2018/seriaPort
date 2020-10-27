@@ -1,19 +1,18 @@
 package com.licheedev.serialtool.activity.deposit;
 
-import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.licheedev.myutils.LogPlus;
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.MainActivity;
 import com.licheedev.serialtool.activity.ScreenUtil;
 import com.licheedev.serialtool.activity.base.BaseActivity;
+import com.licheedev.serialtool.comn.Device;
 import com.licheedev.serialtool.comn.SerialPortManager;
 import com.licheedev.serialtool.comn.message.LogManager;
 import com.licheedev.serialtool.dialog.CurrenySelectUtil;
@@ -29,7 +28,7 @@ import butterknife.OnClick;
 import static com.licheedev.serialtool.comn.message.LogManager.COUNT_COMMAND;
 import static com.licheedev.serialtool.comn.message.LogManager.EXIT_WORK_COMMAND;
 import static com.licheedev.serialtool.comn.message.LogManager.FINISH_DEPOSIT;
-import static com.licheedev.serialtool.comn.message.LogManager.SAVE_SUCCESS_COMMAND;
+import static com.licheedev.serialtool.comn.message.LogManager.SEARCH_LEAD;
 
 public class PaperCurrencyDepositActivity extends BaseActivity {
 
@@ -47,6 +46,8 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
     TextView tvMoneyNum;
     @BindView(R.id.tvRrfuse)
     TextView tvRrfuse;
+    @BindView(R.id.llLead)
+    LinearLayout mLead;
 
     Deposit deposit;
     boolean exit;
@@ -90,7 +91,7 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
         SerialPortManager.instance().sendCommand(SerialPortManager.byteArrayToHexString(commandWorkMode));
     }
 
-    @OnClick({R.id.ibtn_ok, R.id.ibtn_cancel, R.id.button4, R.id.btnCurrency})
+    @OnClick({R.id.ibtn_ok, R.id.ibtn_cancel, R.id.button4, R.id.btnCurrency, R.id.llLead})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ibtn_ok:
@@ -98,7 +99,7 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
 //                    return;
 //                }
                 SerialPortManager.instance().sendSaveCommand();
-                startActivityForResult(new Intent(this, DepositDetailsActivity.class),REQUEST_CODE_DEPOSIT);
+                startActivityForResult(new Intent(this, DepositDetailsActivity.class), REQUEST_CODE_DEPOSIT);
 //                startActivity(new Intent(this, DepositDetailsActivity.class));
                 break;
             case R.id.ibtn_cancel:
@@ -122,6 +123,10 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
 
             case R.id.btnCurrency: //币种选择
                 CurrenySelectUtil.showCurreny(this);
+                break;
+            case R.id.llLead: // 查看拒钞详情
+                // Step 1： 发送查询拒钞原因指令
+                SerialPortManager.instance().sendLeadCommand();
                 break;
         }
     }
@@ -218,8 +223,12 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
 //                SerialPortManager.instance().sendSaveAck();
 //            }
 //            break;
-            case FINISH_DEPOSIT:{
+            case FINISH_DEPOSIT: {
                 finish();
+            }
+            break;
+            case SEARCH_LEAD:{ // 查询退钞
+                ToastUtil.show(this,"查询退钞命令完成，结果待解析～");
             }
             break;
         }
@@ -229,7 +238,7 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(resultCode == RESULT_CODE_DEPOSIT){
+        if (resultCode == RESULT_CODE_DEPOSIT) {
             finish();
         }
     }

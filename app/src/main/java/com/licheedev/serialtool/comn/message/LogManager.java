@@ -3,6 +3,7 @@ package com.licheedev.serialtool.comn.message;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
 import org.greenrobot.eventbus.EventBus;
 
 /**
@@ -14,6 +15,11 @@ public class LogManager {
     public static final int EXIT_WORK_COMMAND = 0x2;
     public static final int SAVE_SUCCESS_COMMAND = 0x3;
     public static final int FINISH_DEPOSIT = 0x4;
+
+    /**
+     * 查询退钞详情
+     */
+    public static final int SEARCH_LEAD = 0x5;
 
     public final List<IMessage> messages;
     private boolean mAutoEnd = true;
@@ -59,9 +65,9 @@ public class LogManager {
         mAutoEnd = !mAutoEnd;
     }
 
-    public static class ReceiveData{
-       public byte[] data;
-       public int what;
+    public static class ReceiveData {
+        public byte[] data;
+        public int what;
 
         public ReceiveData(byte[] data, int what) {
             this.data = data;

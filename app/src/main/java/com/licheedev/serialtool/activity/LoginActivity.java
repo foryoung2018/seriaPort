@@ -34,6 +34,9 @@ public class LoginActivity extends BaseActivity {
             case R.id.btLogin:
                //  startActivity(new Intent(this, SetManageActivity.class));
                 if(checkLogin()){
+                    startActivity(new Intent(this, SetManageActivity.class));
+                    finish();
+                }else{
                     startActivity(new Intent(this, SelectDepositActivitys.class));
                     finish();
                 }
@@ -46,7 +49,7 @@ public class LoginActivity extends BaseActivity {
     private boolean checkLogin() {
         String user = editText.getText().toString();
         String passwd = editText2.getText().toString();
-        return "CDN".equals(user) && "CDN".equals(passwd);
+        return "123".equals(user) && "123".equals(passwd);
     }
 
 
