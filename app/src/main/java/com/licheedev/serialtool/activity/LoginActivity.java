@@ -6,11 +6,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.blankj.utilcode.util.LogUtils;
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.base.BaseActivity;
 import com.licheedev.serialtool.activity.deposit.DepositRecordActivity;
 import com.licheedev.serialtool.activity.deposit.SelectDepositActivitys;
 import com.licheedev.serialtool.activity.manage.SetManageActivity;
+import com.licheedev.serialtool.util.LogPlus;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -32,11 +34,11 @@ public class LoginActivity extends BaseActivity {
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btLogin:
-               //  startActivity(new Intent(this, SetManageActivity.class));
-                if(checkLogin()){
+                //  startActivity(new Intent(this, SetManageActivity.class));
+                if (checkLogin()) {
                     startActivity(new Intent(this, SetManageActivity.class));
                     finish();
-                }else{
+                } else {
                     startActivity(new Intent(this, SelectDepositActivitys.class));
                     finish();
                 }

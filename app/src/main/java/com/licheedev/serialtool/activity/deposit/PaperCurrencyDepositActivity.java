@@ -7,15 +7,14 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.licheedev.myutils.LogPlus;
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.MainActivity;
 import com.licheedev.serialtool.activity.ScreenUtil;
 import com.licheedev.serialtool.activity.base.BaseActivity;
-import com.licheedev.serialtool.comn.Device;
 import com.licheedev.serialtool.comn.SerialPortManager;
 import com.licheedev.serialtool.comn.message.LogManager;
 import com.licheedev.serialtool.dialog.CurrenySelectUtil;
+import com.licheedev.serialtool.util.LogPlus;
 import com.licheedev.serialtool.util.ToastUtil;
 import com.licheedev.serialtool.util.constant.Money;
 
@@ -227,8 +226,8 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
                 finish();
             }
             break;
-            case SEARCH_LEAD:{ // 查询退钞
-                ToastUtil.show(this,"查询退钞命令完成，结果待解析～");
+            case SEARCH_LEAD: { // 查询退钞
+                ToastUtil.show(this, "查询退钞命令完成，结果待解析～");
             }
             break;
         }

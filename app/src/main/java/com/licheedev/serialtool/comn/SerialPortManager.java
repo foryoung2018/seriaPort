@@ -5,12 +5,12 @@ import android.os.HandlerThread;
 import android.serialport.SerialPort;
 import android.serialport.SerialPortFinder;
 
-import com.licheedev.myutils.LogPlus;
 import com.licheedev.serialtool.App;
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.comn.message.LogManager;
 import com.licheedev.serialtool.comn.message.SendMessage;
 import com.licheedev.serialtool.util.ByteUtil;
+import com.licheedev.serialtool.util.LogPlus;
 import com.licheedev.serialtool.util.PrefHelper;
 import com.licheedev.serialtool.util.ToastUtil;
 import com.licheedev.serialtool.util.constant.PreferenceKeys;
