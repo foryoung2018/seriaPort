@@ -32,6 +32,10 @@ public class LogManager {
         EventBus.getDefault().post(map);
     }
 
+    public void postError(String error) {
+        EventBus.getDefault().post(error);
+    }
+
     private static class InstanceHolder {
 
         public static LogManager sManager = new LogManager();

@@ -47,6 +47,8 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
     TextView tvRrfuse;
     @BindView(R.id.llLead)
     LinearLayout mLead;
+    @BindView(R.id.tvStatus)
+    TextView tvStatus;
 
     Deposit deposit;
     boolean exit;
@@ -90,7 +92,7 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
         SerialPortManager.instance().sendCommand(SerialPortManager.byteArrayToHexString(commandWorkMode));
     }
 
-    @OnClick({R.id.ibtn_ok, R.id.ibtn_cancel, R.id.button4, R.id.btnCurrency, R.id.llLead})
+    @OnClick({R.id.ibtn_ok, R.id.ibtn_cancel, R.id.button4, R.id.btnCurrency, R.id.llLead,R.id.tvStatus})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.ibtn_ok:
@@ -127,7 +129,18 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
                 // Step 1： 发送查询拒钞原因指令
                 SerialPortManager.instance().sendLeadCommand();
                 break;
+            case R.id.tvStatus:
+                SerialPortManager.instance().sendClearError();
+                SerialPortManager.instance().sendCommand(SerialPortManager.byteArrayToHexString(commandWorkMode));
+                tvStatus .setVisibility(View.GONE);
+                break;
         }
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(String error) {
+        tvStatus.setText(error + ":点击清除");
+        tvStatus .setVisibility(View.VISIBLE);
     }
 
 

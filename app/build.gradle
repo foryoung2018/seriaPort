@@ -5,7 +5,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "com.licheedev.serialtool"
+        applicationId "com.cdn.serialtool"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -16,7 +16,7 @@ android {
         variant ->
             variant.outputs.all {
                 // 此处指定生成的apk文件名
-                outputFileName = "Kun5Testv1.5.apk"
+                outputFileName = "DepositATM.apk"
             }
     }
     buildTypes {

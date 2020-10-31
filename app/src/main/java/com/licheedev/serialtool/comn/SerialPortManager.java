@@ -65,6 +65,8 @@ public class SerialPortManager {
 
     int[] commandMaskOpen = new int[]{0xA1, 0xA2, 0xA3, 0xA4, 0x05, 0x00, 0x31, 0x5A, 0xBB, 0xBB, 0x6A}; //开防罩门6A
     int[] commandMaskClose = new int[]{0xA1, 0xA2, 0xA3, 0xA4, 0x05, 0x00, 0x32, 0x5A, 0xBB, 0xBB, 0x69}; //关防罩门69
+    int[] commandClearError = new int[]{0xA1, 0xA2, 0xA3, 0xA4, 0x04, 0x00, 0x44,0xBB, 0xBB, 0x44}; //感器状态变化清零
+    int[] commandSDcardACK = new int[]{0xA1, 0xA2, 0xA3, 0xA4, 0x04, 0x00, 0x46,0xBB, 0xBB, 0x46}; //SD卡状态变化清零
 
     final String commandStatus = "A1 A2 A3 A4 04 00 11 BB BB 11";
 
@@ -94,8 +96,17 @@ public class SerialPortManager {
 
     public void sendSaveAck() {
         SerialPortManager.instance().sendCommand(byteArrayToHexString(commandSaveAck));
-
     }
+
+    public void sendClearError() {
+        SerialPortManager.instance().sendCommand(byteArrayToHexString(commandClearError));
+    }
+
+
+    public void sendSDcardAck() {
+        SerialPortManager.instance().sendCommand(byteArrayToHexString(commandSDcardACK));
+    }
+
 
     /**
      * 查询退钞详情

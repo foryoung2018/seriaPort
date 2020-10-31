@@ -190,15 +190,25 @@ public class SerialReadThread extends Thread {
         else if((char)(received[6]&0xff)==0x44)
         {
             if(((char)(received[7]&0xff)&0x01)==0x00)
-            {hexstr1=hexStr+"   钞箱未到位"; }
+            {hexstr1=hexStr+"   钞箱未到位";
+                LogManager.instance().postError("钞箱未到位");
+            }
             else if(((char)(received[7]&0xff)&0x02)==0x00)
-            {hexstr1=hexStr+"   保险柜门未关"; }
+            {hexstr1=hexStr+"   保险柜门未关";
+                LogManager.instance().postError("保险柜门未关");
+            }
             else if(((char)(received[7]&0xff)&0x04)==0x00)
-            {hexstr1=hexStr+"   报警器报警"; }
+            {hexstr1=hexStr+"   报警器报警";
+                LogManager.instance().postError("报警器报警");
+            }
             else if(((char)(received[8]&0xff)&0x01)==0x01)
-            {hexstr1=hexStr+"   罩门传感器错误"; }
+            {hexstr1=hexStr+"   罩门传感器错误";
+                LogManager.instance().postError("罩门传感器错误");
+            }
             else if(((char)(received[8]&0xff)&0x02)==0x02)
-            {hexstr1=hexStr+"   落钞门传感器错误"; }
+            {hexstr1=hexStr+"   落钞门传感器错误";
+                LogManager.instance().postError("落钞门传感器错误");
+            }
             else if(((char)(received[7]&0x08))==0x08)
             {hexstr1=hexStr+"   传感器检测到钞票";
                 SerialPortManager.instance().sendCountCommand();
@@ -455,7 +465,23 @@ public class SerialReadThread extends Thread {
             LogPlus.e("read_thread","查询退钞原因 " + hexStr);
             LogManager.instance().post(new LogManager.ReceiveData(received, SEARCH_LEAD));
         }
-        else
+        else if((char)(received[6]&0xff)== 0x46)
+        {
+            byte status = received[7];
+            switch (status){
+                case 1:
+                    LogPlus.e("read_thread","sd卡状态 无SD卡");
+                    break;
+                case 2:
+                    LogPlus.e("read_thread","sd卡状态 初始化失败");
+                    break;
+                case 3:
+                    LogPlus.e("read_thread","sd卡状态 初始化成功");
+                    break;
+            }
+            SerialPortManager.instance().sendSDcardAck();
+
+        }
         {hexstr1=hexStr;}
 //        LogManager.instance().post(new RecvMessage(hexstr1));
     }
