@@ -4,12 +4,12 @@ import android.content.Context;
 import android.os.SystemClock;
 import android.widget.Toast;
 
-import com.licheedev.myutils.LogPlus;
 import com.licheedev.serialtool.activity.MainActivity;
 import com.licheedev.serialtool.comn.message.IMessage;
 import com.licheedev.serialtool.comn.message.LogManager;
 import com.licheedev.serialtool.comn.message.RecvMessage;
 import com.licheedev.serialtool.util.ByteUtil;
+import com.licheedev.serialtool.util.LogPlus;
 import com.licheedev.serialtool.util.constant.Money;
 
 import java.io.BufferedInputStream;
