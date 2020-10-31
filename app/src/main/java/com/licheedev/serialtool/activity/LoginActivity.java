@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.blankj.utilcode.util.LogUtils;
 import com.licheedev.serialtool.R;
 import com.licheedev.serialtool.activity.base.BaseActivity;
 import com.licheedev.serialtool.activity.deposit.DepositRecordActivity;

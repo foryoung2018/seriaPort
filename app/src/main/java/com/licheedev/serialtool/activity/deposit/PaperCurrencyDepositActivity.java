@@ -113,6 +113,7 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
                     @Override
                     public void onDialogClick(int which, Dialog dialog) {
                         if (which == 0) {
+                            continueDepositDialogdialog.dismiss();
                             SerialPortManager.instance().sendExitWorkModeCommand();
                         }
                     }
@@ -188,12 +189,11 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
                  * 18H 置钞口有纸币，不能执行退出操作
                  */
                 if (((char) (received[7] & 0xff) == 0x06)) {
-                    LogPlus.e("read_thread", "退出成功");
-
+                    LogPlus.e("read_thread", "0x06 退出成功");
                     finish();
                 } else if (((char) (received[7] & 0xff) == 0x15)) {
 
-                    LogPlus.e("read_thread", "不能执行退出操作");
+                    LogPlus.e("read_thread", "0x15 不能执行退出操作");
 
                 } else if (((char) (received[7] & 0xff) == 0x16)) {
 
@@ -207,7 +207,7 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
                         public void onDialogClick(int which, Dialog dialog) {
                             SerialPortManager.instance().closeMaskDoor();
                         }
-                    }, "收钞口有纸币，不能执行退出操作");
+                    }, "0x16 收钞口有纸币，不能执行退出操作");
 
                 } else if (((char) (received[7] & 0xff) == 0x17)) {
 
@@ -221,12 +221,12 @@ public class PaperCurrencyDepositActivity extends BaseActivity {
 
                         }
 
-                    }, "退钞口有纸币，不能执行退出操作");
+                    }, "0x17 退钞口有纸币，不能执行退出操作");
 
                 } else if (((char) (received[7] & 0xff) == 0x18)) {
                     SerialPortManager.instance().openMaskDoor();
                     ToastUtil.show(this, "请取出置钞口钞票");
-                    LogPlus.e("read_thread", "置钞口有纸币，不能执行退出操作");
+                    LogPlus.e("read_thread", "0x18 置钞口有纸币，不能执行退出操作");
 
                 }
             }

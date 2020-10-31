@@ -68,6 +68,9 @@ public class SerialPortManager {
     int[] commandClearError = new int[]{0xA1, 0xA2, 0xA3, 0xA4, 0x04, 0x00, 0x44,0xBB, 0xBB, 0x44}; //感器状态变化清零
     int[] commandSDcardACK = new int[]{0xA1, 0xA2, 0xA3, 0xA4, 0x04, 0x00, 0x46,0xBB, 0xBB, 0x46}; //SD卡状态变化清零
 
+    /**
+     * 机器状态信息指令 ACK Command 11H
+     */
     final String commandStatus = "A1 A2 A3 A4 04 00 11 BB BB 11";
 
 
@@ -76,6 +79,10 @@ public class SerialPortManager {
 
     final String exitCommand1 = "A1 A2 A3 A4 05 00 4F 01 BB BB 4F ";
     final String exitCommand2 = "A1 A2 A3 A4 13 00 11 01 00 00 04 3D 00 05 40 00 00 00 00 00 00 01 BB BB 7A";
+
+    /**
+     * 退出工作模式 CMD 20H
+     */
     final String exitCommand = "A1 A2 A3 A4 05 00 20 06 BB BB 27 ";
     final String exitCommand4 = "A1 A2 A3 A4 04 00 16 BB BB 16 ";
     final String exitCommand5 = "A1 A2 A3 A4 05 00 4F 01 BB BB 4F ";
